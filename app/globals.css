@@ -3105,3 +3105,7 @@ a:hover,
 .summary .saved {
   color: var(--pink-ink);
 }
+.float-sticker.b {
+  bottom: auto;
+  top: 40%;
+}
