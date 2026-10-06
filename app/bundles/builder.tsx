@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useCart, useStoreData } from "@/components/providers";
-import { Img } from "@/components/ui";
+import { Tile, soft } from "@/components/ui";
 import { countItems, priceGroup, tierFor, tierProgressMessage, type Counts } from "@/lib/pricing";
 
 export function Builder() {
@@ -34,6 +34,23 @@ export function Builder() {
   const final = g.final + gift;
   const progress = tierProgressMessage(n, cfg);
   const current = tierFor(n, tiers);
+
+  // Celebrate when a new discount unlocks
+  const [party, setParty] = useState<string | null>(null);
+  const prev = useRef({ pct: -1, routine: false });
+  const pct = current?.percent ?? 0;
+  useEffect(() => {
+    const was = prev.current;
+    prev.current = { pct, routine: g.routineApplied };
+    if (was.pct < 0) return; // first render
+    let msg: string | null = null;
+    if (pct > was.pct) msg = `${pct}% off unlocked! 🎉`;
+    else if (g.routineApplied && !was.routine) msg = `Complete Routine: +${cr.percent}% off! ✨`;
+    if (!msg) return;
+    setParty(msg);
+    const t = setTimeout(() => setParty(null), 1800);
+    return () => clearTimeout(t);
+  }, [pct, g.routineApplied, cr.percent]);
   const maxMin = tiers[tiers.length - 1]?.minItems ?? 1;
   const routineMissing = cr.enabled
     ? cr.requiredCategories.filter((c) => !store.products.some((p) => p.category === c && counts[p.id]))
@@ -67,9 +84,10 @@ export function Builder() {
   return (
     <div className="builder">
       <div>
-        <h2 id="mm-title">Mix & Match</h2>
+        <span className="label">mix &amp; match</span>
+        <h2 id="mm-title">Build your own box.</h2>
         <p className="lede" style={{ marginBottom: "1.5rem" }}>
-          Choose any products in any quantity. The more you add, the more you save.
+          Any products, any quantity. Watch the discounts unlock as you go.
         </p>
         <ul className="tier-list" aria-label="Discount tiers">
           {tiers.map((t, i) => {
@@ -101,8 +119,13 @@ export function Builder() {
           {shown.map((p) => {
             const q = counts[p.id] ?? 0;
             return (
-              <div key={p.id} className={`pick${q ? " in" : ""}`}>
-                <Img src={p.images[0]} alt="" sizes="(max-width: 700px) 45vw, 220px" />
+              <div key={p.id} className={`pick${q ? " in" : ""}`} style={{ position: "relative" }}>
+                {q > 0 && (
+                  <span className="qty-badge" key={q} aria-hidden="true">
+                    ×{q}
+                  </span>
+                )}
+                <Tile src={p.images[0]} alt="" tint={soft(p.color, 0.45)} sizes="(max-width: 700px) 45vw, 220px" />
                 <div>
                   <div className="name">
                     <Link href={`/products/${p.slug}`} style={{ color: "inherit", textDecoration: "none" }}>
@@ -227,6 +250,23 @@ export function Builder() {
           </p>
         )}
       </aside>
+      {party && (
+        <div className="unlock" role="status" aria-live="assertive">
+          {Array.from({ length: 18 }).map((_, k) => (
+            <i
+              key={k}
+              aria-hidden="true"
+              style={{
+                background: ["#c9f24d", "#ff4f8b", "#ff8a2b", "#b9a7ff", "#12a594"][k % 5],
+                ["--x" as string]: `${Math.cos((k / 18) * Math.PI * 2) * (140 + (k % 3) * 60)}px`,
+                ["--y" as string]: `${Math.sin((k / 18) * Math.PI * 2) * (110 + (k % 4) * 40)}px`,
+                ["--r" as string]: `${k * 40}deg`,
+              }}
+            />
+          ))}
+          <span className="msg">{party}</span>
+        </div>
+      )}
     </div>
   );
 }

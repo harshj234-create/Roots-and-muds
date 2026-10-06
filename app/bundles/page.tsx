@@ -16,8 +16,9 @@ export default async function BundlesPage() {
     <div className="builder-page">
       <div className="wrap">
         <header className="page-head">
-          <h1>Bundles</h1>
-          <p className="lede">Pick one of our ready-made rituals, or build your own box below and watch the savings add up.</p>
+          <span className="label">bundles</span>
+          <h1>Bundle up, save more.</h1>
+          <p className="lede">Grab a ready-made ritual, or scroll down and build your own box. The more you add, the more you save.</p>
         </header>
         <div className="bundle-grid three">
           {bundles.map((b) => (

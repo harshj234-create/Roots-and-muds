@@ -12,8 +12,9 @@ export default function Contact() {
   return (
     <div className="wrap">
       <header className="page-head">
-        <h1>Talk to us</h1>
-        <p className="lede">Questions about a product, an order or a gift? WhatsApp is quickest. We usually reply within a few hours.</p>
+        <span className="label">say hi</span>
+        <h1>Talk to us.</h1>
+        <p className="lede">Questions about a product, an order or a gift? WhatsApp is the quickest way to reach us.</p>
       </header>
       <div className="contact-grid" style={{ paddingBottom: "2rem" }}>
         <ul className="contact-ways">
@@ -34,9 +35,27 @@ export default function Contact() {
           {site.email && (
             <li>
               <strong>Email</strong>
-              <a href={`mailto:${site.email}`}>{site.email}</a>
+              <p className="muted">For anything that needs a longer reply.</p>
+              <a className="btn btn-ghost" href={`mailto:${site.email}`}>
+                {site.email}
+              </a>
             </li>
           )}
+          <li>
+            <strong>Socials</strong>
+            <p className="muted">New drops, tips and behind the scenes.</p>
+            <div className="socials">
+              <a className="btn btn-ghost btn-sm" href={site.instagram} target="_blank" rel="noopener">
+                Instagram
+              </a>
+              <a className="btn btn-ghost btn-sm" href={site.tiktok} target="_blank" rel="noopener">
+                TikTok
+              </a>
+              <a className="btn btn-ghost btn-sm" href={site.facebook} target="_blank" rel="noopener">
+                Facebook
+              </a>
+            </div>
+          </li>
         </ul>
         <div>
           <h2 style={{ fontSize: "var(--step-3)" }}>Send a message</h2>

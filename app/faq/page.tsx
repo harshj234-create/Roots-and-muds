@@ -17,7 +17,8 @@ export default function FAQ() {
   return (
     <div className="wrap narrow">
       <header className="page-head">
-        <h1>Questions, answered</h1>
+        <span className="label">faq</span>
+        <h1>Questions, answered.</h1>
       </header>
       <div className="faq">
         {site.faq.map((f, i) => (

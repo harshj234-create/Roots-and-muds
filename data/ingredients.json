@@ -2,9 +2,9 @@
   "ingredients": [
     {
       "id": "kumkumadi",
-      "name": "Kumkumadi oil",
+      "name": "Kumkumadi",
       "color": "#F29C6B",
-      "text": "A classic Ayurvedic blend built around saffron and herbs, traditionally used for a brighter-looking, glowing complexion.",
+      "text": "A classic Ayurvedic glow blend of herbs, traditionally loved for a brighter-looking complexion.",
       "products": [
         "kumkumadi-soap",
         "kumkumadi-moisturizer"
@@ -14,22 +14,19 @@
       "id": "saffron",
       "name": "Saffron",
       "color": "#FFC53D",
-      "text": "Kesar, the golden spice of Ayurvedic beauty rituals, loved for radiance.",
+      "text": "Kesar, the golden spice of Ayurvedic beauty rituals. Real strands go into our Kesar Chandan bar.",
       "products": [
-        "kumkumadi-soap",
-        "saffron-sandal-soap",
-        "kumkumadi-moisturizer"
+        "saffron-sandal-soap"
       ]
     },
     {
       "id": "sandalwood",
       "name": "Sandalwood",
       "color": "#DDBB92",
-      "text": "Chandan: warm, woody and calming. A centuries-old favourite for gentle, soothing care.",
+      "text": "Chandan: warm, woody and soothing. A centuries-old favourite for gentle care.",
       "products": [
-        "kumkumadi-soap",
-        "sandalwood-herbal-soap",
         "saffron-sandal-soap",
+        "sandalwood-herbal-soap",
         "haldi-chandan-moisturizer"
       ]
     },
@@ -43,10 +40,22 @@
       ]
     },
     {
+      "id": "rose",
+      "name": "Rose",
+      "color": "#F4A6B8",
+      "text": "Rose oil, rose water and real petals: softening, refreshing and very pretty.",
+      "products": [
+        "kumkumadi-soap",
+        "lip-plump-balm",
+        "haldi-chandan-moisturizer",
+        "kumkumadi-moisturizer"
+      ]
+    },
+    {
       "id": "coffee",
       "name": "Coffee",
       "color": "#B98A68",
-      "text": "Fine grounds gently buff away rough, dull skin, and it smells like your morning cup.",
+      "text": "Robusta coffee gently buffs away rough skin, and smells like your morning cup.",
       "products": [
         "coffee-cream-soap",
         "coffee-vanilla-moisturizer"
@@ -59,6 +68,7 @@
       "text": "Soft, cozy and comforting. Made for dry-skin days.",
       "products": [
         "vanilla-herbal-soap",
+        "sandalwood-herbal-soap",
         "coffee-vanilla-moisturizer"
       ]
     },
@@ -66,39 +76,60 @@
       "id": "lavender",
       "name": "Lavender",
       "color": "#C4B5F0",
-      "text": "The wind-down scent. Gentle cleansing with a calming, relaxing aroma.",
+      "text": "The wind-down scent, from real lavender essential oil.",
       "products": [
-        "lavender-soap"
+        "lavender-soap",
+        "calming-nourishing-oil"
       ]
     },
     {
       "id": "aloe",
       "name": "Aloe vera",
       "color": "#B5D99A",
-      "text": "Cool, fresh and famously gentle on sensitive skin.",
+      "text": "Cool, fresh and famously gentle. It's in more of our range than you'd think.",
       "products": [
-        "aloe-vera-soap"
+        "aloe-vera-soap",
+        "dahlia-herbal-face-soap",
+        "vanilla-herbal-soap",
+        "haldi-chandan-moisturizer",
+        "kumkumadi-moisturizer",
+        "coffee-vanilla-moisturizer"
       ]
     },
     {
       "id": "mango",
       "name": "Mango butter",
       "color": "#FFBE5C",
-      "text": "Rich, melty butter that keeps lips soft, hydrated and protected.",
+      "text": "Rich, melty butter that keeps lips and skin soft and protected.",
       "products": [
-        "mango-butter-lip-balm"
+        "mango-butter-lip-balm",
+        "kumkumadi-soap"
+      ]
+    },
+    {
+      "id": "goat-milk",
+      "name": "Goat milk",
+      "color": "#F3EEE2",
+      "text": "The secret behind the creamy, gentle lather in every one of our soaps.",
+      "products": [
+        "kumkumadi-soap",
+        "dahlia-herbal-face-soap",
+        "vanilla-herbal-soap",
+        "coffee-cream-soap",
+        "lavender-soap",
+        "sandalwood-herbal-soap",
+        "aloe-vera-soap",
+        "saffron-sandal-soap"
       ]
     },
     {
       "id": "herbs",
-      "name": "Herbal blends",
+      "name": "Ayurvedic herbs",
       "color": "#A9C77F",
-      "text": "Calming botanicals infused into nourishing oils and balms.",
+      "text": "Bacopa, jatamansi, spikenard, nettle and liquorice, infused slowly into our body oils.",
       "products": [
         "herbal-oil",
-        "calming-nourishing-oil",
-        "lip-plump-balm",
-        "dahlia-herbal-face-soap"
+        "calming-nourishing-oil"
       ]
     }
   ]

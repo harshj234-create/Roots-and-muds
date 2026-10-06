@@ -25,6 +25,11 @@ export interface Product {
   scent?: string;
   color?: string;
   legacyHandle?: string; // the product's old Shopify address, redirected to the new one
+  ingredients?: string; // full list, as printed on the box
+  benefit?: string;
+  vegan?: boolean;
+  contains?: string; // e.g. "goat milk", "beeswax"
+  madeIn?: string;
 }
 
 export interface Category {

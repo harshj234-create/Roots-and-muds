@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMemo } from "react";
 import { useCart, useStoreData } from "@/components/providers";
-import { Img, Price } from "@/components/ui";
+import { Price, Tile, soft } from "@/components/ui";
 import { Totals } from "@/components/order-summary";
+import { RaMLogo } from "@/components/logo";
 import { cartSuggestion, priceCart, productMap, tierProgressMessage } from "@/lib/pricing";
 
 export function CartView() {
@@ -23,7 +24,9 @@ export function CartView() {
   if (!lines.length) {
     return (
       <div className="empty">
-        <div className="pebble-mark" aria-hidden="true" />
+        <div className="pebble-mark" aria-hidden="true">
+          <RaMLogo />
+        </div>
         <h2>Your cart is empty</h2>
         <p className="muted">Start with a single favourite, or build a bundle and save up to {store.pricing.mixAndMatch.tiers.at(-1)?.percent}%.</p>
         <div className="hero-actions" style={{ justifyContent: "center" }}>
@@ -40,13 +43,13 @@ export function CartView() {
 
   const thumbFor = (key: string) => {
     const l = lines.find((x) => x.key === key)!;
-    if (l.type === "product") return products.get(l.productId)?.images[0];
+    if (l.type === "product") return products.get(l.productId);
     if (l.type === "bundle") {
       const b = store.bundles.find((x) => x.id === l.bundleId);
       const id = b?.items?.[0]?.productId ?? l.choices?.[0];
-      return id ? products.get(id)?.images[0] : undefined;
+      return id ? products.get(id) : undefined;
     }
-    return l.items[0] ? products.get(l.items[0].productId)?.images[0] : undefined;
+    return l.items[0] ? products.get(l.items[0].productId) : undefined;
   };
 
   return (
@@ -59,7 +62,7 @@ export function CartView() {
             const href = line.type === "product" ? `/products/${products.get(line.productId)?.slug}` : line.type === "bundle" ? `/bundles#${line.bundleId}` : undefined;
             return (
               <li className="cart-line" key={pl.key}>
-                <div className="thumb">{thumb && <Img src={thumb} alt="" sizes="84px" />}</div>
+                <div className="thumb">{thumb && <Tile src={thumb.images[0]} alt="" tint={soft(thumb.color)} sizes="88px" />}</div>
                 <div>
                   <h3>{href ? <Link href={href}>{pl.title}</Link> : pl.title}</h3>
                   {line.type === "product" && <p className="contents">{products.get(line.productId)?.size}</p>}

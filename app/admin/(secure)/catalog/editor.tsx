@@ -59,7 +59,7 @@ export function CatalogEditor({ initial, customised }: { initial: Store; customi
         description: "",
         keyIngredients: [],
         howToUse: "",
-        images: ["/images/products/kumkumadi-soap-1.svg"],
+        images: ["/images/logo-ram.svg"],
         inStock: false,
         bestseller: false,
       });
@@ -139,7 +139,7 @@ export function CatalogEditor({ initial, customised }: { initial: Store; customi
                           <textarea value={p.howToUse} onChange={(e) => setP(i, { howToUse: e.target.value })} />
                         </label>
                         <label className="small">
-                          Image paths, one per line (e.g. /images/products/{p.id}-1.jpg)
+                          Image paths, one per line (e.g. /images/shop/my-photo.jpg)
                           <textarea value={p.images.join("\n")} onChange={(e) => setP(i, { images: e.target.value.split("\n").map((x) => x.trim()).filter(Boolean) })} />
                         </label>
                         <span className="small muted">Web address: /products/{p.slug}</span>

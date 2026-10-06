@@ -41,17 +41,18 @@
       "category": "soaps",
       "price": 25,
       "size": "100 g",
-      "shortDescription": "Ayurvedic Kumkumadi oil with saffron and sandalwood to brighten and nourish.",
-      "description": "Our signature bar, made in small batches around Kumkumadi oil, a traditional Ayurvedic blend prized for radiance. Saffron and sandalwood give it a warm, golden character, and the rich lather cleanses without leaving skin tight. A daily ritual for skin that looks brighter and feels nourished.",
+      "shortDescription": "Kumkumadi oil, kakadu plum and rose in a creamy goat-milk bar that keeps skin nourished and glowing.",
+      "description": "Our radiance bar. Kumkumadi oil, the classic Ayurvedic glow blend, meets vitamin-rich kakadu plum oil, jojoba and mango butter, with sesame oil infused with rose. Goat milk gives it a soft, creamy lather that cleanses without leaving skin tight.",
       "keyIngredients": [
         "Kumkumadi oil",
-        "Saffron",
-        "Sandalwood"
+        "Kakadu plum oil",
+        "Rose",
+        "Goat milk"
       ],
-      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "howToUse": "Cleanse your face and body twice a day, morning and evening. Work up a lather on damp skin, rinse, then follow with a refreshing mist while your pores are open. Keep the bar on a draining dish between uses.",
       "images": [
-        "/images/shop/6298044190540_1.jpg",
         "/images/shop/6298044190540_3.jpg",
+        "/images/shop/6298044190540_1.jpg",
         "/images/shop/6298044190540_2.jpg"
       ],
       "inStock": true,
@@ -65,7 +66,12 @@
       ],
       "scent": "warm",
       "color": "#F2A65A",
-      "legacyHandle": "kumkumadi-soap"
+      "legacyHandle": "kumkumadi-soap",
+      "ingredients": "Coconut oil, kumkumadi oil, kakadu plum oil, jojoba oil, mango butter, sunflower oil, sesame oil infused with rose oil, goat milk, water, NaOH.",
+      "benefit": "Helps keep skin nourished.",
+      "vegan": false,
+      "contains": "goat milk",
+      "madeIn": "India"
     },
     {
       "id": "dahlia-herbal-face-soap",
@@ -74,16 +80,18 @@
       "category": "soaps",
       "price": 25,
       "size": "100 g",
-      "shortDescription": "Made with herbal, vegan, organic ingredients. A gentle bar for sensitive skin and glowing face care.",
-      "description": "Made for the delicate skin of your face. This soft, low-lather herbal bar cleanses gently, so it suits sensitive skin that reacts to harsher soaps. Skin is left clean, calm and comfortable.",
+      "shortDescription": "Dahlia oil, gotu kola and aloe vera in a gentle bar for sensitive skin and everyday face care.",
+      "description": "A gentle bar made for your face. Dahlia oil and gotu kola, a herb long used in Ayurveda, join aloe vera juice, kokum butter and grapeseed oil for a soft cleanse that leaves skin feeling refreshed and hydrated, never stripped.",
       "keyIngredients": [
-        "Herbal extracts",
-        "Plant oils"
+        "Dahlia oil",
+        "Gotu kola",
+        "Aloe vera",
+        "Kokum butter"
       ],
-      "howToUse": "Lather between your hands, massage the foam gently over damp face avoiding the eye area, then rinse well. Use morning and night.",
+      "howToUse": "Cleanse your face and body twice a day, morning and evening. Work up a lather on damp skin, rinse, then follow with a refreshing mist while your pores are open. Keep the bar on a draining dish between uses.",
       "images": [
-        "/images/shop/6298044190557_1.jpg",
         "/images/shop/6298044190557_3.jpg",
+        "/images/shop/6298044190557_1.jpg",
         "/images/shop/6298044190557_2.jpg"
       ],
       "inStock": true,
@@ -96,7 +104,12 @@
       ],
       "scent": "floral",
       "color": "#EBA9B8",
-      "legacyHandle": "dahlia-soap"
+      "legacyHandle": "dahlia-soap",
+      "ingredients": "Coconut oil, grapeseed oil, jojoba oil, kokum butter, gotu kola oil, aloe vera juice, dahlia oil, goat milk, water, NaOH.",
+      "benefit": "Helps keep skin feeling refreshed and hydrated.",
+      "vegan": false,
+      "contains": "goat milk",
+      "madeIn": "India"
     },
     {
       "id": "vanilla-herbal-soap",
@@ -105,17 +118,18 @@
       "category": "soaps",
       "price": 25,
       "size": "100 g",
-      "shortDescription": "A vegan herbal bar made with organic care. Nourishes dry skin and leaves it refreshed.",
-      "description": "A comforting herbal bar for dry skin. Creamy plant oils help nourish while you cleanse, and the soft vanilla note comes from natural ingredients, never synthetic fragrance. Skin feels refreshed, never stripped.",
+      "shortDescription": "Vanilla, almond oil and shea butter in a cozy bar that nourishes dry skin and leaves it refreshed.",
+      "description": "Comfort in a bar for dry skin days. Almond oil, shea butter and flaxseed oil nourish while you cleanse, aloe vera keeps things calm, and the soft vanilla comes from real vanilla oil, not synthetic fragrance.",
       "keyIngredients": [
-        "Vanilla",
-        "Plant oils",
-        "Herbal extracts"
+        "Vanilla oil",
+        "Almond oil",
+        "Shea butter",
+        "Aloe vera"
       ],
-      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "howToUse": "Cleanse your face and body twice a day, morning and evening. Work up a lather on damp skin, rinse, then follow with a refreshing mist while your pores are open. Keep the bar on a draining dish between uses.",
       "images": [
-        "/images/shop/6298044190564_1.jpg",
         "/images/shop/6298044190564_3.jpg",
+        "/images/shop/6298044190564_1.jpg",
         "/images/shop/6298044190564_2.jpg"
       ],
       "inStock": true,
@@ -128,7 +142,12 @@
       ],
       "scent": "cozy",
       "color": "#EAD7B0",
-      "legacyHandle": "vanilla-soap"
+      "legacyHandle": "vanilla-soap",
+      "ingredients": "Coconut oil, almond oil, jojoba oil, shea butter, flaxseed oil, sunflower oil, aloe vera juice, vanilla oil, goat milk, water, NaOH.",
+      "benefit": "Helps keep skin feeling soft and hydrated.",
+      "vegan": false,
+      "contains": "goat milk",
+      "madeIn": "India"
     },
     {
       "id": "coffee-cream-soap",
@@ -137,16 +156,18 @@
       "category": "soaps",
       "price": 25,
       "size": "100 g",
-      "shortDescription": "Herbal coffee soap with a natural scrub that exfoliates and refreshes your skin.",
-      "description": "Your morning coffee, made for the shower. Fine coffee grounds buff away dull, rough skin while a creamy base keeps it soft. The natural aroma of fresh coffee wakes you up without any fake scent.",
+      "shortDescription": "Real robusta coffee gently exfoliates while cocoa butter keeps skin smooth. Smells like your morning cup.",
+      "description": "Your morning coffee, made for the shower. Sunflower oil infused with robusta coffee powder gently buffs away rough, dull skin, while cocoa butter, tamanu and jojoba oils keep it smooth and supple.",
       "keyIngredients": [
-        "Coffee grounds",
-        "Plant oils"
+        "Robusta coffee",
+        "Cocoa butter",
+        "Tamanu oil",
+        "Jojoba oil"
       ],
-      "howToUse": "Lather on damp skin and massage in small circles to let the coffee grounds exfoliate, then rinse. Best on the body; use gently 2–3 times a week on rough areas.",
+      "howToUse": "Lather on damp skin and massage in small circles so the coffee can gently exfoliate, then rinse. Use twice a day on the body, and gently on rough areas.",
       "images": [
-        "/images/shop/6298044190571_1.jpg",
         "/images/shop/6298044190571_3.jpg",
+        "/images/shop/6298044190571_1.jpg",
         "/images/shop/6298044190571_2.jpg"
       ],
       "inStock": true,
@@ -160,7 +181,12 @@
       ],
       "scent": "cozy",
       "color": "#B98A68",
-      "legacyHandle": "coffee-soap"
+      "legacyHandle": "coffee-soap",
+      "ingredients": "Coconut oil, tamanu oil, jojoba oil, cocoa butter, sesame oil, sunflower oil infused with robusta coffee powder, goat milk, water, NaOH.",
+      "benefit": "Helps maintain smooth, supple skin.",
+      "vegan": false,
+      "contains": "goat milk",
+      "madeIn": "India"
     },
     {
       "id": "lavender-soap",
@@ -169,16 +195,18 @@
       "category": "soaps",
       "price": 25,
       "size": "100 g",
-      "shortDescription": "Natural, vegan, organic ingredients. Gentle cleansing that leaves skin soft, refreshed and nourished.",
-      "description": "A calming bar for the end of the day. Lavender brings a soft, soothing aroma to a gentle lather that cleanses without harshness, leaving skin clean and you a little more relaxed.",
+      "shortDescription": "Lavender essential oil, shea butter and olive oil for gentle cleansing and a calm, relaxing scent.",
+      "description": "The wind-down bar. Real lavender essential oil brings a calming aroma to a gentle, creamy lather made with shea butter, olive oil and light watermelon seed oil, leaving skin soft, refreshed and nourished.",
       "keyIngredients": [
-        "Lavender",
-        "Plant oils"
+        "Lavender essential oil",
+        "Shea butter",
+        "Watermelon seed oil",
+        "Olive oil"
       ],
-      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "howToUse": "Cleanse your face and body twice a day, morning and evening. Work up a lather on damp skin, rinse, then follow with a refreshing mist while your pores are open. Keep the bar on a draining dish between uses.",
       "images": [
-        "/images/shop/6298044190533_1.jpg",
         "/images/shop/6298044190533_3.jpg",
+        "/images/shop/6298044190533_1.jpg",
         "/images/shop/6298044190533_2.jpg"
       ],
       "inStock": true,
@@ -193,7 +221,12 @@
       ],
       "scent": "floral",
       "color": "#C4B5F0",
-      "legacyHandle": "lavender-soap"
+      "legacyHandle": "lavender-soap",
+      "ingredients": "Coconut oil, jojoba oil, watermelon seed oil, sesame oil, sunflower oil, shea butter, olive oil, castor oil, goat milk, gangajal, NaOH, lavender essential oil.",
+      "benefit": "Helps rejuvenate the skin.",
+      "vegan": false,
+      "contains": "goat milk",
+      "madeIn": "India"
     },
     {
       "id": "sandalwood-herbal-soap",
@@ -202,17 +235,18 @@
       "category": "soaps",
       "price": 25,
       "size": "100 g",
-      "shortDescription": "Herbal sandalwood soap that's gentle on sensitive skin and leaves it nourished.",
-      "description": "Sandalwood has been part of Ayurvedic skincare for centuries. This herbal bar pairs it with nourishing plant oils for a gentle cleanse that suits sensitive skin, with a warm, woody aroma that comes from the ingredients themselves.",
+      "shortDescription": "Sandalwood oil, pomegranate seed oil and avocado butter. Soothing, gentle and nourishing.",
+      "description": "Warm, woody and soothing. Sandalwood oil, a centuries-old favourite in Ayurvedic care, pairs with pomegranate and papaya seed oils, avocado butter and a hint of vanilla for a gentle bar that helps keep skin soft and healthy.",
       "keyIngredients": [
-        "Sandalwood",
-        "Herbal extracts",
-        "Plant oils"
+        "Sandalwood oil",
+        "Pomegranate seed oil",
+        "Avocado butter",
+        "Vanilla"
       ],
-      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "howToUse": "Cleanse your face and body twice a day, morning and evening. Work up a lather on damp skin, rinse, then follow with a refreshing mist while your pores are open. Keep the bar on a draining dish between uses.",
       "images": [
-        "/images/shop/6298044190526_1.jpg",
         "/images/shop/6298044190526_3.jpg",
+        "/images/shop/6298044190526_1.jpg",
         "/images/shop/6298044190526_2.jpg"
       ],
       "inStock": true,
@@ -226,7 +260,12 @@
       ],
       "scent": "warm",
       "color": "#DDBB92",
-      "legacyHandle": "sandalwood-soap"
+      "legacyHandle": "sandalwood-soap",
+      "ingredients": "Coconut oil, pomegranate seed oil, jojoba oil, avocado butter, papaya seed oil, sesame oil infused with vanilla powder, goat milk, water, NaOH, sandalwood oil.",
+      "benefit": "Soothing; helps maintain soft, healthy skin.",
+      "vegan": false,
+      "contains": "goat milk",
+      "madeIn": "India"
     },
     {
       "id": "aloe-vera-soap",
@@ -235,16 +274,18 @@
       "category": "soaps",
       "price": 25,
       "size": "100 g",
-      "shortDescription": "Gentle on sensitive skin and 100% vegan. A favourite natural soap for men, too.",
-      "description": "Fresh, simple and kind to sensitive skin. Aloe vera helps keep skin comfortable after cleansing, and the clean, unfussy feel makes it a favourite for men as well as women.",
+      "shortDescription": "Aloe vera gel and tea tree essential oil for a fresh, clean feel. A favourite for men, too.",
+      "description": "Fresh and simple. Aloe vera gel and tea tree essential oil give a clean, cooling feel, while kokum butter and bakuchi seed oil, an Ayurvedic classic, keep skin comfortable. Gentle enough for sensitive skin and loved by men.",
       "keyIngredients": [
-        "Aloe vera",
-        "Plant oils"
+        "Aloe vera gel",
+        "Tea tree oil",
+        "Bakuchi seed oil",
+        "Kokum butter"
       ],
-      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "howToUse": "Cleanse your face and body twice a day, morning and evening. Work up a lather on damp skin, rinse, then follow with a refreshing mist while your pores are open. Keep the bar on a draining dish between uses.",
       "images": [
-        "/images/shop/6298044190618_1.jpg",
         "/images/shop/6298044190618_3.jpg",
+        "/images/shop/6298044190618_1.jpg",
         "/images/shop/6298044190618_2.jpg"
       ],
       "inStock": true,
@@ -259,7 +300,12 @@
       ],
       "scent": "fresh",
       "color": "#B5D99A",
-      "legacyHandle": "aloe-vera-soap"
+      "legacyHandle": "aloe-vera-soap",
+      "ingredients": "Coconut oil, grapeseed oil, jojoba oil, kokum butter, bakuchi seed oil, aloe vera gel, tea tree essential oil, goat milk, water, NaOH.",
+      "benefit": "Helps keep skin looking fresh.",
+      "vegan": false,
+      "contains": "goat milk",
+      "madeIn": "India"
     },
     {
       "id": "saffron-sandal-soap",
@@ -268,17 +314,18 @@
       "category": "soaps",
       "price": 25,
       "size": "100 g",
-      "shortDescription": "A herbal saffron and sandalwood bar for dry skin, made for face and body. Vegan and organic.",
-      "description": "A rich bar for dry skin that you can use on both face and body. Saffron and sandalwood, a classic Ayurvedic pairing, come together in a creamy lather that leaves skin soft and nourished.",
+      "shortDescription": "Kesar chandan: real saffron strands and sandalwood powder in a rich bar for dry skin, face and body.",
+      "description": "Our Kesar Chandan bar. Real saffron strands and saffron-infused oil meet sandalwood powder, a classic Ayurvedic pairing, with rosehip, carrot seed and jojoba oils and kokum butter for dry skin that needs extra care.",
       "keyIngredients": [
         "Saffron",
-        "Sandalwood",
-        "Plant oils"
+        "Sandalwood powder",
+        "Rosehip seed oil",
+        "Carrot seed oil"
       ],
-      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "howToUse": "Cleanse your face and body twice a day, morning and evening. Work up a lather on damp skin, rinse, then follow with a refreshing mist while your pores are open. Keep the bar on a draining dish between uses.",
       "images": [
-        "/images/shop/6298044190502_1.jpg",
         "/images/shop/6298044190502_3.jpg",
+        "/images/shop/6298044190502_1.jpg",
         "/images/shop/6298044190502_2.jpg"
       ],
       "inStock": true,
@@ -292,7 +339,12 @@
       ],
       "scent": "warm",
       "color": "#F3C46E",
-      "legacyHandle": "saffron-sandal-soap"
+      "legacyHandle": "saffron-sandal-soap",
+      "ingredients": "Coconut oil, rosehip seed oil, jojoba oil, kokum butter, carrot seed oil, sesame oil infused with saffron, saffron strands, sandal powder, goat milk, water, NaOH.",
+      "benefit": "Helps maintain smooth skin.",
+      "vegan": false,
+      "contains": "goat milk",
+      "madeIn": "India"
     },
     {
       "id": "haldi-chandan-moisturizer",
@@ -300,18 +352,19 @@
       "name": "Haldi Chandan Moisturizer",
       "category": "moisturizers",
       "price": 50,
-      "size": "192 g",
-      "shortDescription": "Ayurvedic care for naturally glowing skin. Nourishes deeply, brightens, and leaves your skin soft.",
-      "description": "Haldi (turmeric) and chandan (sandalwood) are the heart of traditional Indian skincare. Our body moisturizer brings them together in a rich cream that nourishes deeply and leaves skin with a healthy, natural glow.",
+      "size": "200 ml",
+      "shortDescription": "Turmeric and sandalwood with rose water and shea butter. Nourishes deeply and leaves skin soft and glowing.",
+      "description": "Haldi and chandan, the golden duo of Indian skincare, in a rich body and face cream. Shea butter, jojoba and tamanu oils nourish, rose and vetiver hydrosols refresh, and vitamin E and aloe vera keep skin soft and glowing.",
       "keyIngredients": [
-        "Turmeric (haldi)",
-        "Sandalwood (chandan)",
-        "Plant butters"
+        "Turmeric",
+        "Sandalwood",
+        "Rose & vetiver",
+        "Shea butter"
       ],
-      "howToUse": "Smooth a small amount over clean, slightly damp skin, ideally after your bath or shower. Massage in upward strokes until absorbed. Use daily, morning or night.",
+      "howToUse": "Gently massage onto hands, feet, elbows, knees and other areas prone to dryness. For soft, smooth, itch-free skin, use this body and face cream straight after your bath.",
       "images": [
-        "/images/shop/6298044201505_1.jpg",
         "/images/shop/6298044201505_3.jpg",
+        "/images/shop/6298044201505_1.jpg",
         "/images/shop/6298044201505_2.jpg"
       ],
       "inStock": true,
@@ -326,7 +379,12 @@
       ],
       "scent": "warm",
       "color": "#F7CB5A",
-      "legacyHandle": "haldi-chandan-moisturizer"
+      "legacyHandle": "haldi-chandan-moisturizer",
+      "ingredients": "Jojoba oil, shea butter, tamanu oil, cucumber seed oil, rose hydrosol, vetiver hydrosol, glycerin, aloe vera gel, vitamin E, xanthan gum, beeswax, stearic acid, cetyl alcohol, Olivem 1000 (eco-certified emulsifier), turmeric and sandalwood essential oils.",
+      "benefit": "Deep nourishment and a natural glow.",
+      "vegan": false,
+      "contains": "beeswax",
+      "madeIn": "India"
     },
     {
       "id": "kumkumadi-moisturizer",
@@ -334,18 +392,19 @@
       "name": "Kumkumadi Moisturizer",
       "category": "moisturizers",
       "price": 50,
-      "size": "192 g",
-      "shortDescription": "Made with Ayurvedic herbs. Hydrates skin, boosts glow and reveals natural brightness with every use.",
-      "description": "All the radiance of our Kumkumadi ritual in a lightweight body moisturizer. Kumkumadi oil and saffron hydrate without heaviness and help skin look luminous. It absorbs quickly, so you can dress straight away.",
+      "size": "200 ml",
+      "shortDescription": "Rose water infused with kumkumadi herbs, plus shea butter and vitamin E. Hydrates and boosts your glow.",
+      "description": "All the radiance of our Kumkumadi ritual in a body and face cream. Rose hydrosol infused with kumkumadi herbs, olive oil and shea butter hydrate deeply, while vitamin E and lily and lotus essential oils leave skin luminous.",
       "keyIngredients": [
-        "Kumkumadi oil",
-        "Saffron",
-        "Plant oils"
+        "Kumkumadi herbs",
+        "Rose hydrosol",
+        "Shea butter",
+        "Vitamin E"
       ],
-      "howToUse": "Smooth a small amount over clean, slightly damp skin, ideally after your bath or shower. Massage in upward strokes until absorbed. Use daily, morning or night.",
+      "howToUse": "Gently massage onto hands, feet, elbows, knees and other areas prone to dryness. For soft, smooth, itch-free skin, use this body and face cream straight after your bath.",
       "images": [
-        "/images/shop/6298044201512_1.jpg",
         "/images/shop/6298044201512_3.jpg",
+        "/images/shop/6298044201512_1.jpg",
         "/images/shop/6298044201512_2.jpg"
       ],
       "inStock": true,
@@ -361,7 +420,12 @@
       ],
       "scent": "warm",
       "color": "#F29C6B",
-      "legacyHandle": "kumkumadi-moisturiser"
+      "legacyHandle": "kumkumadi-moisturiser",
+      "ingredients": "Olive oil, shea butter, grapeseed oil, rose hydrosol infused with kumkumadi herbs, vetiver hydrosol, glycerin, aloe vera juice, vitamin E, beeswax, cetearyl alcohol, Olivem 1000, Sensicare (eco-certified emulsifier), essential oils of lily and lotus.",
+      "benefit": "Hydrates and boosts radiance.",
+      "vegan": false,
+      "contains": "beeswax",
+      "madeIn": "India"
     },
     {
       "id": "coffee-vanilla-moisturizer",
@@ -369,18 +433,19 @@
       "name": "Coffee & Vanilla Moisturizer",
       "category": "moisturizers",
       "price": 50,
-      "size": "192 g",
-      "shortDescription": "Enriched with herbal ingredients for deep hydration, smooth texture and a radiant, healthy glow.",
-      "description": "A smooth, deeply hydrating cream with the warm, gourmand aroma of coffee and vanilla from natural ingredients. It melts into skin and leaves it soft and supple. The natural partner to our Coffee Cream Soap.",
+      "size": "200 ml",
+      "shortDescription": "Hyaluronic acid and niacinamide meet coffee and vanilla essential oils for deep hydration and smooth skin.",
+      "description": "A light, deeply hydrating cream with a cozy coffee and vanilla aroma from essential oils. Mandarin water infused with black tea and tangerine peel, plus hyaluronic acid, niacinamide and aloe vera, leaves skin smooth and supple. 100% vegan.",
       "keyIngredients": [
-        "Coffee",
-        "Vanilla",
-        "Plant butters"
+        "Hyaluronic acid",
+        "Niacinamide",
+        "Coffee & vanilla oils",
+        "Black tea"
       ],
-      "howToUse": "Smooth a small amount over clean, slightly damp skin, ideally after your bath or shower. Massage in upward strokes until absorbed. Use daily, morning or night.",
+      "howToUse": "Gently massage onto hands, feet, elbows, knees and other areas prone to dryness. For soft, smooth, itch-free skin, use this body and face cream straight after your bath.",
       "images": [
-        "/images/shop/6298044190748_1.jpg",
         "/images/shop/6298044190748_3.jpg",
+        "/images/shop/6298044190748_1.jpg",
         "/images/shop/6298044190748_2.jpg"
       ],
       "inStock": true,
@@ -394,7 +459,12 @@
       ],
       "scent": "cozy",
       "color": "#C99B78",
-      "legacyHandle": "coffee-vanilla-moisturiser"
+      "legacyHandle": "coffee-vanilla-moisturiser",
+      "ingredients": "Mandarin hydrosol infused with black tea and tangerine peel powder, xanthan gum, cetearyl alcohol, stearic acid, aloe vera juice, hyaluronic acid, niacinamide, Olivem 1000, Sensicare (eco-certified emulsifier), coffee and vanilla essential oils.",
+      "benefit": "Deep hydration with a smooth texture.",
+      "vegan": true,
+      "contains": "",
+      "madeIn": "India"
     },
     {
       "id": "herbal-oil",
@@ -402,32 +472,37 @@
       "name": "Herbal Oil",
       "category": "oils",
       "price": 50,
-      "size": "96 g",
-      "shortDescription": "A calming herbal oil that hydrates and soothes. Nourishes deeply for soft, everyday body care.",
-      "description": "A calming blend of herbs infused in nourishing plant oils. Massaged into skin after bathing, it hydrates, soothes and turns your routine into a few quiet minutes for yourself.",
+      "size": "100 ml",
+      "shortDescription": "A warming herbal massage oil with kalonji, hempseed, camphor and peppermint. Nourishes and refreshes.",
+      "description": "Our warming body and massage oil. Apricot kernel, kalonji and hempseed oils are infused with nettle, spikenard, liquorice, bay leaf and a touch of cayenne, then finished with camphor, peppermint, eucalyptus and cedarwood essential oils for a tingly, refreshing massage. 100% vegan.",
       "keyIngredients": [
-        "Herbal infusion",
-        "Plant oils"
+        "Kalonji oil",
+        "Hempseed oil",
+        "Camphor & peppermint",
+        "Spikenard & liquorice"
       ],
-      "howToUse": "Warm a few drops between your palms and massage into damp skin after bathing, focusing on dry areas such as elbows, knees and heels. A little goes a long way.",
+      "howToUse": "Warm a little between your palms and massage into the body after a bath, or use as a massage oil. It has a warming, cooling tingle from camphor, peppermint and cayenne, so keep it away from your eyes, face and broken skin.",
       "images": [
-        "/images/shop/6298044190519_1.jpg",
         "/images/shop/6298044190519_3.jpg",
+        "/images/shop/6298044190519_1.jpg",
         "/images/shop/6298044190519_2.jpg"
       ],
       "inStock": true,
       "bestseller": false,
       "skinTypes": [
-        "dry",
-        "sensitive"
+        "normal"
       ],
       "goals": [
-        "calm",
-        "hydrate"
+        "calm"
       ],
       "scent": "fresh",
       "color": "#A9C77F",
-      "legacyHandle": "body-massage-oil-for-pain-relieving"
+      "legacyHandle": "body-massage-oil-for-pain-relieving",
+      "ingredients": "Apricot kernel oil, kalonji oil, hempseed oil, sunflower oil (infused with nettle, spikenard, liquorice, bay leaf and cayenne pepper), camphor, peppermint, eucalyptus and cedarwood essential oils.",
+      "benefit": "Deeply nourishes and keeps skin refreshed.",
+      "vegan": true,
+      "contains": "",
+      "madeIn": "India"
     },
     {
       "id": "calming-nourishing-oil",
@@ -435,32 +510,41 @@
       "name": "Calming Nourishing Oil",
       "category": "oils",
       "price": 50,
-      "size": "96 g",
-      "shortDescription": "Crafted to hydrate and soften skin naturally, with deep moisture and lasting smoothness.",
-      "description": "For skin that needs more than a cream. This nourishing body oil softens and locks in moisture that lasts all day, with a calming aroma that comes from its natural ingredients.",
+      "size": "100 ml",
+      "shortDescription": "Seven light seed oils with bacopa, jatamansi and lavender. Hydrates and strengthens your moisture barrier.",
+      "description": "A calming everyday body oil. Light watermelon, pomegranate and cucumber seed oils absorb easily, sesame oil infused with rosemary, bacopa and jatamansi brings Ayurvedic calm, and geranium and lavender essential oils help you unwind. Great for the scalp too. 100% vegan.",
       "keyIngredients": [
-        "Plant oils",
-        "Herbal extracts"
+        "Bacopa & jatamansi",
+        "Rosemary",
+        "Lavender & geranium",
+        "Pomegranate seed oil"
       ],
-      "howToUse": "Warm a few drops between your palms and massage into damp skin after bathing, focusing on dry areas such as elbows, knees and heels. A little goes a long way.",
+      "howToUse": "Apply generously all over straight after a bath, or use as a massage oil. Use it as your everyday lotion, on its own, and massage it into your body and scalp. If you have oily skin, avoid the face.",
       "images": [
-        "/images/shop/6298044190601_1.jpg",
         "/images/shop/6298044190601_3.jpg",
+        "/images/shop/6298044190601_1.jpg",
         "/images/shop/6298044190601_2.jpg"
       ],
       "inStock": true,
       "bestseller": false,
       "skinTypes": [
         "dry",
-        "normal"
+        "normal",
+        "sensitive"
       ],
       "goals": [
         "hydrate",
-        "calm"
+        "calm",
+        "glow"
       ],
       "scent": "floral",
       "color": "#D9B270",
-      "legacyHandle": "calming-body-oil"
+      "legacyHandle": "calming-body-oil",
+      "ingredients": "Watermelon seed oil, pomegranate seed oil, cucumber seed oil, jojoba oil, grapeseed oil, sesame oil infused with rosemary, bacopa and jatamansi, apricot kernel oil, castor oil, geranium and lavender essential oils.",
+      "benefit": "Hydrates, nourishes and strengthens the skin's natural moisture barrier.",
+      "vegan": true,
+      "contains": "",
+      "madeIn": "India"
     },
     {
       "id": "mango-butter-lip-balm",
@@ -469,16 +553,18 @@
       "category": "lip-balms",
       "price": 25,
       "size": "15 g",
-      "shortDescription": "Organic mango butter for soft, hydrated lips. Soothes, nourishes and protects every day.",
-      "description": "Rich mango butter in a smooth balm that keeps lips soft and hydrated, and helps protect them from the dry UAE air and air-conditioning.",
+      "shortDescription": "Mango and shea butter with a fresh grapefruit twist. Keeps lips soft, hydrated and protected.",
+      "description": "Rich mango and shea butters melt into lips to keep them soft and hydrated, with watermelon seed oil for shine and a fresh hint of grapefruit and fennel essential oils. Your everyday save for dry AC air.",
       "keyIngredients": [
         "Mango butter",
-        "Plant oils"
+        "Shea butter",
+        "Grapefruit oil",
+        "Fennel oil"
       ],
-      "howToUse": "Glide over clean lips whenever they feel dry. Apply a thicker layer before bed for overnight softness.",
+      "howToUse": "Gently apply to moist lips each morning and before bed. For chapped lips, reapply 3–4 times through the day.",
       "images": [
-        "/images/shop/6298044190588_1.jpg",
         "/images/shop/6298044190588_3.jpg",
+        "/images/shop/6298044190588_1.jpg",
         "/images/shop/6298044190588_2.jpg"
       ],
       "inStock": true,
@@ -489,7 +575,12 @@
       ],
       "scent": "fruity",
       "color": "#FFBE5C",
-      "legacyHandle": "mango-butter-lip-balm"
+      "legacyHandle": "mango-butter-lip-balm",
+      "ingredients": "Mango butter, shea butter, coconut oil, watermelon seed oil, castor oil, beeswax, grapefruit and fennel essential oils.",
+      "benefit": "Keeps lips smooth and hydrated.",
+      "vegan": false,
+      "contains": "beeswax",
+      "madeIn": "India"
     },
     {
       "id": "lip-plump-balm",
@@ -498,16 +589,18 @@
       "category": "lip-balms",
       "price": 25,
       "size": "15 g",
-      "shortDescription": "A hydrating herbal balm for smooth, soft, fuller-looking lips. Natural ingredients, everyday care.",
-      "description": "A herbal lip balm that smooths and softens, giving lips a naturally fuller look without stinging plumping agents.",
+      "shortDescription": "Rose petals, licorice and a cool tingle of peppermint for smooth, soft, fuller-looking lips.",
+      "description": "A herbal plumping balm. Coconut oil infused with rose petals and licorice, plus shea butter, smooths and softens, while peppermint essential oil gives a gentle tingle for naturally fuller-looking lips.",
       "keyIngredients": [
-        "Herbal extracts",
-        "Plant butters"
+        "Rose petals",
+        "Licorice",
+        "Peppermint oil",
+        "Shea butter"
       ],
-      "howToUse": "Glide over clean lips whenever they feel dry. Apply a thicker layer before bed for overnight softness.",
+      "howToUse": "Gently apply to moist lips each morning and before bed. For chapped lips, reapply 3–4 times through the day.",
       "images": [
-        "/images/shop/6298044190595_1.jpg",
         "/images/shop/6298044190595_3.jpg",
+        "/images/shop/6298044190595_1.jpg",
         "/images/shop/6298044190595_2.jpg"
       ],
       "inStock": true,
@@ -518,7 +611,12 @@
       ],
       "scent": "fruity",
       "color": "#EE9D9D",
-      "legacyHandle": "lip-plump-balm"
+      "legacyHandle": "lip-plump-balm",
+      "ingredients": "Coconut oil infused with rose petals and licorice powder, shea butter, castor oil, beeswax, geranium and peppermint essential oils.",
+      "benefit": "Keeps lips smooth and hydrated.",
+      "vegan": false,
+      "contains": "beeswax",
+      "madeIn": "India"
     }
   ]
 }

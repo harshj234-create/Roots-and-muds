@@ -7,7 +7,7 @@ export default function CartPage() {
   return (
     <div className="wrap">
       <header className="page-head" style={{ paddingBottom: "1rem" }}>
-        <h1>Your cart</h1>
+        <h1>Your cart.</h1>
       </header>
       <CartView />
     </div>

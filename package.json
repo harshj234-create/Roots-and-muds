@@ -8,7 +8,6 @@
     "build": "next build",
     "start": "next start",
     "test": "node --experimental-strip-types --test tests/*.test.ts",
-    "images": "node scripts/make-placeholders.mjs",
     "save-photos": "node scripts/save-photos.mjs"
   },
   "engines": {

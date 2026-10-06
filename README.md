@@ -1,6 +1,8 @@
 # Roots and Muds online shop
 
-The new rootsandmuds.ae: a fast, mobile-first shop with **Cash on Delivery only** (no online payments), ready-made bundles, a Mix & Match bundle builder, automatic bundle savings in the cart, and a password-protected admin page for orders, products and prices.
+The new Roots and Muds shop: a fast, mobile-first, playful shop with **Cash on Delivery only** (no online payments), ready-made bundles, a Mix & Match bundle builder that celebrates every discount you unlock, a three-tap skin quiz, an ingredient explorer, a shower-routine guide, a slide-in cart with automatic bundle savings, and a password-protected admin page for orders, products and prices.
+
+Product names, photos, ingredients and directions come from your current store and the product boxes.
 
 Built with Next.js. It runs free on Vercel's Hobby plan for a shop of this size, with a free Neon Postgres database.
 
@@ -59,7 +61,9 @@ CallMeBot is a free third-party service meant for personal alerts. It works well
 
 Redeploy after adding variables.
 
-### Step 6: Point rootsandmuds.ae at the new site
+### Step 6: Point your domain at the new site
+Your store currently lives at **rootsandmuds.com**, and rootsandmuds.ae redirects to it. Connect whichever you want as the main address (and set `SITE_URL` to match); add the other one too so it redirects.
+
 1. In Shopify, remove rootsandmuds.ae from **Settings → Domains** (or cancel the store once you're happy).
 2. In Vercel open **Settings → Domains**, add `rootsandmuds.ae` and `www.rootsandmuds.ae`.
 3. Vercel shows the exact DNS records to add. Add them where you bought the domain. Changes usually work within an hour.
@@ -96,21 +100,24 @@ Admin edits are stored in the database and take priority over the data files. **
 ### The data files (for bigger edits or a developer)
 | File | What it holds |
 |---|---|
-| `data/products.json` | Categories and all 15 products: id, name, category, price, size, short and full description, key ingredients, how to use, images, in-stock flag, bestseller |
+| `data/products.json` | Categories and all 15 products: id, name, category, price, size, short and full description, key ingredients, full ingredient list (from the box), how to use, images, in-stock flag, bestseller, vegan flag, skin-quiz tags and tile colour |
+| `data/ingredients.json` | The "Tap an ingredient" section on the home page |
 | `data/bundles.json` | Ready-made bundles: contents (or "choose one from each category"), price, shown/hidden, featured on home page |
 | `data/pricing.json` | All pricing rules: Mix & Match tiers, Complete Routine %, gift box, delivery fee and free-delivery threshold |
 | `data/site.json` | Phone/WhatsApp, emirates, delivery time slots, brand story, FAQ, delivery and returns policy text |
 
 Editing a file on GitHub (click the file, then the pencil icon, then **Commit**) redeploys the site automatically.
 
-### Replacing the placeholder photos
-The product images are illustrated placeholders in `public/images/products/` (two per product: `…-1.svg` is the main image, `…-2.svg` the second gallery image) and `public/images/hero.svg` for the home page.
+### Product photos
+All photos come from your Shopify store and are saved in this repository in `public/images/shop/`, so the site keeps them after Shopify is closed. Each product has three: the box with the product (main), the front of the box, and the back label.
 
-1. Name your photos to match, e.g. `kumkumadi-soap-1.jpg`. Portrait 4:5 works best (e.g. 1600 × 2000 px). The hero works best around 1200 × 1400.
-2. Upload them to `public/images/products/` on GitHub.
-3. Update the image paths (on the admin page under **Text, ingredients & images**, or in `data/products.json`). JPG/PNG/WebP photos are automatically resized and compressed for fast loading.
+The product tiles are tinted in each product's colour (`color` in `data/products.json`). This works best with photos on a plain white background, like the current ones.
 
-A logo file can replace the leaf mark in `components/icons.tsx` (`LogoMark`) and `app/icon.svg` (browser tab icon).
+To add or change a photo: upload it to `public/images/shop/` on GitHub (square, about 1600 × 1600 px, white background), then change the image path on the admin page (**Text, ingredients & images**) or in `data/products.json`. Photos are resized and compressed automatically.
+
+If you ever paste a Shopify image link (`https://cdn.shopify.com/...`) into the data files, the **Save photos from Shopify** job on GitHub (Actions tab) downloads it into the repository automatically.
+
+The "RaM" logo is in `components/logo.tsx` (drawn from your logo file) and `app/icon.svg` (browser tab icon).
 
 ---
 
@@ -143,7 +150,7 @@ npm install
 npm run dev        # http://localhost:3000, admin password "admin" locally
 npm test           # pricing engine tests
 npm run build
-npm run images     # regenerate placeholder images
+npm run save-photos  # download any Shopify image links into public/images/shop
 ```
 
 Without `DATABASE_URL`, local orders go to `.data/db.json`. On Vercel a database is required.

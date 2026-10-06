@@ -79,10 +79,42 @@ const Hand = (p: P) => (
     <path d="M8 12V5.5a1.5 1.5 0 0 1 3 0V11M11 10.5V4a1.5 1.5 0 0 1 3 0v7M14 10.5V5.5a1.5 1.5 0 0 1 3 0V14c0 4-2.5 7-6 7-2.5 0-4-1-5.5-3L3.8 15a1.6 1.6 0 0 1 2.4-2L8 15" />
   </svg>
 );
+const Drop = (p: P) => (
+  <svg viewBox="0 0 24 24" {...base} {...p}>
+    <path d="M12 3.5c3 4 5.5 7 5.5 10a5.5 5.5 0 0 1-11 0c0-3 2.5-6 5.5-10z" />
+    <path d="M4 20L20 4" />
+  </svg>
+);
+const Flower = (p: P) => (
+  <svg viewBox="0 0 24 24" {...base} {...p}>
+    <circle cx="12" cy="10" r="2.2" />
+    <path d="M12 7.8C11 5 12 3 12 3s1 2 0 4.8M14.1 9.3c2.3-1.8 4.4-1.4 4.4-1.4s-1 2-3.9 2.6M14 11.6c2.9.6 3.9 2.6 3.9 2.6s-2.2.4-4.4-1.4M9.9 11.6C7 12.2 6 14.2 6 14.2s2.2.4 4.4-1.4M9.9 9.3C7.6 7.5 5.5 7.9 5.5 7.9s1 2 3.9 2.6M12 12.2V21" />
+  </svg>
+);
 export const badgeIcon: Record<string, (p: P) => React.ReactElement> = {
   "Cruelty Free": Rabbit,
-  "100% Natural Ingredients": Leaf,
-  Vegan: Sprout,
-  Organic: Sun,
+  "Certified Organic": Sun,
+  "Natural Ingredients": Leaf,
+  "Paraben Free": Drop,
+  "No Fake Scents": Flower,
   Handmade: Hand,
+  Vegan: Sprout,
 };
+
+export const InstagramIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" width="20" height="20" {...base} {...p}>
+    <rect x="3" y="3" width="18" height="18" rx="5" />
+    <circle cx="12" cy="12" r="4" />
+    <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" />
+  </svg>
+);
+export const TikTokIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" width="20" height="20" {...base} {...p}>
+    <path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 2.5 2.3 4.2 5 4.5" />
+  </svg>
+);
+export const FacebookIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" width="20" height="20" {...base} {...p}>
+    <path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" />
+  </svg>
+);

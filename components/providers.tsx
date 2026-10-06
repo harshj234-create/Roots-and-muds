@@ -26,6 +26,10 @@ interface CartApi {
   lines: CartLine[];
   count: number;
   addProduct: (productId: string, qty?: number) => void;
+  addMany: (productIds: string[]) => void;
+  drawerOpen: boolean;
+  setDrawerOpen: (open: boolean) => void;
+  bump: number; // increments on every add (drives the cart badge animation)
   addBundle: (bundleId: string, choices?: string[]) => void;
   saveBox: (box: BoxDraft) => void;
   setQty: (key: string, qty: number) => void;
@@ -70,6 +74,8 @@ export function Providers({ store, children }: { store: Store; children: React.R
   const [draft, setDraftState] = useState<BoxDraft>(emptyDraft);
   const [ready, setReady] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [bump, setBump] = useState(0);
   const toastTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   useEffect(() => {
@@ -111,7 +117,21 @@ export function Providers({ store, children }: { store: Store; children: React.R
         if (ex) return ls.map((l) => (l.key === key ? { ...l, qty: Math.min(99, l.qty + qty) } : l));
         return [...ls, { key, type: "product", productId, qty }];
       });
-      notify(`${name(productId)} added to your cart`);
+      setBump((b) => b + 1);
+      setDrawerOpen(true);
+    };
+    const addMany = (productIds: string[]) => {
+      setLines((ls) => {
+        let next = [...ls];
+        for (const productId of productIds) {
+          const key = `p:${productId}`;
+          const ex = next.find((l) => l.key === key);
+          next = ex ? next.map((l) => (l.key === key ? { ...l, qty: Math.min(99, l.qty + 1) } : l)) : [...next, { key, type: "product", productId, qty: 1 }];
+        }
+        return next;
+      });
+      setBump((b) => b + 1);
+      setDrawerOpen(true);
     };
     const addBundle = (bundleId: string, choices?: string[]) => {
       const key = `b:${bundleId}${choices?.length ? ":" + choices.join("|") : ""}`;
@@ -120,7 +140,8 @@ export function Providers({ store, children }: { store: Store; children: React.R
         if (ex) return ls.map((l) => (l.key === key ? { ...l, qty: Math.min(99, l.qty + 1) } : l));
         return [...ls, { key, type: "bundle", bundleId, qty: 1, choices }];
       });
-      notify(`${store.bundles.find((b) => b.id === bundleId)?.name ?? "Bundle"} added to your cart`);
+      setBump((b) => b + 1);
+      setDrawerOpen(true);
     };
     const saveBox = (box: BoxDraft) => {
       const items = box.items.filter((i) => i.qty > 0);
@@ -138,13 +159,18 @@ export function Providers({ store, children }: { store: Store; children: React.R
           : [...ls, line];
       });
       setDraftState(emptyDraft);
-      notify(box.editingKey ? "Your box has been updated" : "Your Mix & Match box was added to your cart");
+      setBump((b) => b + 1);
+      setDrawerOpen(true);
     };
     return {
       ready,
       lines,
       count: lines.reduce((s, l) => s + (l.type === "box" ? l.items.reduce((a, i) => a + i.qty, 0) : l.qty), 0),
       addProduct,
+      addMany,
+      drawerOpen,
+      setDrawerOpen,
+      bump,
       addBundle,
       saveBox,
       setQty: (key, qty) => setLines((ls) => ls.map((l) => (l.key === key ? { ...l, qty: Math.max(1, Math.min(99, qty)) } : l))),
@@ -168,7 +194,7 @@ export function Providers({ store, children }: { store: Store; children: React.R
       },
       toast,
     };
-  }, [lines, draft, ready, toast, notify, name, store]);
+  }, [lines, draft, ready, toast, notify, name, store, drawerOpen, bump]);
 
   return (
     <StoreCtx.Provider value={store}>

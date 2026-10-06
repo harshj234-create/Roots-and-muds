@@ -18,9 +18,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!p) return { title: "Product not found" };
   return {
     title: `${p.name} (${p.size})`,
-    description: `${p.shortDescription} Handmade, vegan and cruelty-free. AED ${p.price}, cash on delivery in the UAE.`,
+    description: `${p.shortDescription} Certified organic and cruelty-free. AED ${p.price}, cash on delivery in the UAE.`,
     alternates: { canonical: `/products/${p.slug}` },
-    openGraph: { title: p.name, description: p.shortDescription, images: p.images[0].endsWith(".svg") ? undefined : [p.images[0]] },
+    openGraph: { title: p.name, description: p.shortDescription, images: [p.images[0]] },
   };
 }
 
@@ -95,9 +95,12 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       {related.length > 0 && (
         <section aria-labelledby="fbt" style={{ paddingBottom: "2rem" }}>
           <div className="section-head">
-            <h2 id="fbt" style={{ fontSize: "var(--step-3)" }}>
-              Frequently bought together
-            </h2>
+            <div>
+              <span className="label">pairs well with</span>
+              <h2 id="fbt" style={{ fontSize: "var(--step-3)" }}>
+                Frequently bought together
+              </h2>
+            </div>
           </div>
           <div className="product-grid four">
             {related.map((p) => (
