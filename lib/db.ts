@@ -31,7 +31,7 @@ export interface MessageRecord {
   message: string;
 }
 
-const url = process.env.DATABASE_URL || process.env.POSTGRES_URL;
+const url = process.env.DATABASE_URL || process.env.NETLIFY_DATABASE_URL || process.env.POSTGRES_URL;
 
 // ---------- Postgres ----------
 
@@ -99,8 +99,8 @@ async function readFile(): Promise<FileDB> {
   }
 }
 function withFile<T>(fn: (db: FileDB) => T | Promise<T>, write = false): Promise<T> {
-  if (process.env.VERCEL) {
-    return Promise.reject(new Error("DATABASE_URL is not set. Connect a Postgres database in Vercel (see README)."));
+  if (process.env.VERCEL || process.env.NETLIFY) {
+    return Promise.reject(new Error("DATABASE_URL is not set. Connect a Postgres database in your host's settings (see README)."));
   }
   const run = lock.then(async () => {
     const db = await readFile();

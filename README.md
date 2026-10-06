@@ -69,6 +69,15 @@ Old Shopify links to collections, the contact/FAQ/about pages and shipping/refun
 ### Step 7: Test before telling customers
 Place a test order from your phone, check the email/WhatsApp/sheet arrive, then set that order to **Cancelled** in admin.
 
+## Launching on Netlify instead of Vercel
+
+The code works on Netlify unchanged (`netlify.toml` is included).
+
+1. On netlify.com sign up with GitHub, then **Add new project → Import an existing project → GitHub** and choose `Roots-and-muds`. Keep the detected settings and click **Deploy**.
+2. Create a free Postgres database at **neon.tech**, copy its **connection string**, and add it in Netlify under **Project configuration → Environment variables** as `DATABASE_URL`.
+3. Add `ADMIN_PASSWORD`, `ADMIN_SESSION_SECRET` and `SITE_URL` there too (plus any alert variables from Step 5 below), then **Deploys → Trigger deploy → Deploy site**.
+4. For the domain, use **Domain management → Add a domain** in Netlify; it shows the DNS records to add.
+
 ---
 
 ## 2. Running the shop
