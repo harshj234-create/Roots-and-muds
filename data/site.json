@@ -14,7 +14,7 @@
   "phoneE164": "+971505506800",
   "whatsapp": "971505506800",
   "email": "",
-  "instagram": "",
+  "instagram": "https://www.instagram.com/rootsandmuds/",
   "locale": {
     "lang": "en",
     "dir": "ltr"
@@ -36,9 +36,9 @@
   ],
   "deliveryEstimate": "1–3 working days across the UAE",
   "brandStory": [
-    "Roots and Muds began with a simple wish: skincare we would happily use on our own families. Every bar, cream, oil and balm is made by hand in small batches here in the UAE.",
-    "We draw on Ayurveda, India's traditional system of wellbeing, using ingredients it has trusted for centuries: Kumkumadi oil, saffron, sandalwood and turmeric.",
-    "What we leave out matters just as much. No parabens, no harsh chemicals and no synthetic fragrance, so any scent you notice comes from the ingredients themselves. Everything is vegan and never tested on animals."
+    "Roots and Muds began with a simple idea: to bring the purity of nature into everyday self-care. Inspired by traditional remedies and the healing power of botanicals, we craft products that honour the wisdom of the earth while fitting seamlessly into modern life.",
+    "Our formulas are built on roots, herbs and natural elements that restore balance and vitality. From soothing soaps to indulgent oils, each product is designed to rejuvenate both body and spirit.",
+    "Every soap, lip balm and body oil is handcrafted with precision and passion. We choose only the finest, ethically sourced ingredients so that what touches your skin is safe, nourishing and true to nature."
   ],
   "faq": [
     {
@@ -91,5 +91,39 @@
       "Unopened items can be returned within 7 days of delivery. Contact us first to arrange collection; we refund in cash or as store credit once we receive the item.",
       "If you refuse a cash-on-delivery order at the door, we may ask for the delivery fee on your next order."
     ]
-  }
+  },
+  "facebook": "https://www.facebook.com/profile.php?id=61577173229639",
+  "tiktok": "https://www.tiktok.com/@rootsandmuds",
+  "heroTitle": "Feel fresh. Look radiant.",
+  "images": {
+    "logo": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/RaM.svg",
+    "heroBanner": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/WhatsApp_Image_2025-08-07_at_18.28.11.jpg",
+    "banner2": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/IMG_6597.jpg",
+    "banner3": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/IMG_6595.jpg",
+    "aboutNature": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/download_3e55d582-cb04-499d-9ac2-6792ecd9fcc4.jpg",
+    "aboutCrafted": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/download_1.jpg",
+    "aboutPlanet": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/download_2.jpg"
+  },
+  "about": [
+    {
+      "title": "The power of nature",
+      "text": "Our formulas are built on roots, herbs and natural elements that restore balance and vitality. From soothing soaps to indulgent oils, each product is designed to rejuvenate both body and spirit.",
+      "image": "aboutNature"
+    },
+    {
+      "title": "Crafted with care",
+      "text": "Every soap, lip balm and body oil is handcrafted with precision and passion. We choose only the finest, ethically sourced ingredients so that what touches your skin is safe, nourishing and true to nature.",
+      "image": "aboutCrafted"
+    },
+    {
+      "title": "Sustainability at heart",
+      "text": "Beauty should never come at the planet's expense. Our packaging is eco-friendly and our processes are designed to reduce environmental impact. Caring for the earth is at the core of everything we do.",
+      "image": "aboutPlanet"
+    }
+  ],
+  "promise": [
+    "100% commitment to natural ingredients",
+    "Ethical sourcing and mindful production",
+    "Products as kind to the planet as they are to your skin"
+  ]
 }

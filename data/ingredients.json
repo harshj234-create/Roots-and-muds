@@ -1,0 +1,105 @@
+{
+  "ingredients": [
+    {
+      "id": "kumkumadi",
+      "name": "Kumkumadi oil",
+      "color": "#F29C6B",
+      "text": "A classic Ayurvedic blend built around saffron and herbs, traditionally used for a brighter-looking, glowing complexion.",
+      "products": [
+        "kumkumadi-soap",
+        "kumkumadi-moisturizer"
+      ]
+    },
+    {
+      "id": "saffron",
+      "name": "Saffron",
+      "color": "#FFC53D",
+      "text": "Kesar, the golden spice of Ayurvedic beauty rituals, loved for radiance.",
+      "products": [
+        "kumkumadi-soap",
+        "saffron-sandal-soap",
+        "kumkumadi-moisturizer"
+      ]
+    },
+    {
+      "id": "sandalwood",
+      "name": "Sandalwood",
+      "color": "#DDBB92",
+      "text": "Chandan: warm, woody and calming. A centuries-old favourite for gentle, soothing care.",
+      "products": [
+        "kumkumadi-soap",
+        "sandalwood-herbal-soap",
+        "saffron-sandal-soap",
+        "haldi-chandan-moisturizer"
+      ]
+    },
+    {
+      "id": "turmeric",
+      "name": "Turmeric",
+      "color": "#F7CB5A",
+      "text": "Haldi, the golden root behind the classic Indian glow ritual.",
+      "products": [
+        "haldi-chandan-moisturizer"
+      ]
+    },
+    {
+      "id": "coffee",
+      "name": "Coffee",
+      "color": "#B98A68",
+      "text": "Fine grounds gently buff away rough, dull skin, and it smells like your morning cup.",
+      "products": [
+        "coffee-cream-soap",
+        "coffee-vanilla-moisturizer"
+      ]
+    },
+    {
+      "id": "vanilla",
+      "name": "Vanilla",
+      "color": "#EAD7B0",
+      "text": "Soft, cozy and comforting. Made for dry-skin days.",
+      "products": [
+        "vanilla-herbal-soap",
+        "coffee-vanilla-moisturizer"
+      ]
+    },
+    {
+      "id": "lavender",
+      "name": "Lavender",
+      "color": "#C4B5F0",
+      "text": "The wind-down scent. Gentle cleansing with a calming, relaxing aroma.",
+      "products": [
+        "lavender-soap"
+      ]
+    },
+    {
+      "id": "aloe",
+      "name": "Aloe vera",
+      "color": "#B5D99A",
+      "text": "Cool, fresh and famously gentle on sensitive skin.",
+      "products": [
+        "aloe-vera-soap"
+      ]
+    },
+    {
+      "id": "mango",
+      "name": "Mango butter",
+      "color": "#FFBE5C",
+      "text": "Rich, melty butter that keeps lips soft, hydrated and protected.",
+      "products": [
+        "mango-butter-lip-balm"
+      ]
+    },
+    {
+      "id": "herbs",
+      "name": "Herbal blends",
+      "color": "#A9C77F",
+      "text": "Calming botanicals infused into nourishing oils and balms.",
+      "products": [
+        "herbal-oil",
+        "calming-nourishing-oil",
+        "lip-plump-balm",
+        "dahlia-herbal-face-soap"
+      ]
+    }
+  ]
+}

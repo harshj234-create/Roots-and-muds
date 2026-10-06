@@ -1,0 +1,27 @@
+# Copies the product photos from Shopify into this repository, so the site keeps its
+# photos after the Shopify store is closed. Runs when the data files change, or by hand
+# from the Actions tab ("Save photos from Shopify" → Run workflow).
+name: Save photos from Shopify
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["data/products.json", "data/site.json"]
+permissions:
+  contents: write
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/save-photos.mjs
+      - name: Commit photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/images/shop data/products.json data/site.json
+          git diff --cached --quiet || git commit -m "Save product photos from Shopify"
+          git push

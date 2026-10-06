@@ -19,6 +19,12 @@ export interface Product {
   images: string[];
   inStock: boolean;
   bestseller?: boolean;
+  // used by the skin quiz and for colour accents
+  skinTypes?: string[];
+  goals?: string[];
+  scent?: string;
+  color?: string;
+  legacyHandle?: string; // the product's old Shopify address, redirected to the new one
 }
 
 export interface Category {
@@ -26,6 +32,8 @@ export interface Category {
   name: string;
   shortName: string;
   description: string;
+  image?: string;
+  color?: string;
 }
 
 export interface BundleItem {
