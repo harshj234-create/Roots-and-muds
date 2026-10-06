@@ -1,0 +1,229 @@
+{
+  "bundles": [
+    {
+      "id": "kumkumadi-glow-ritual",
+      "name": "Kumkumadi Glow Ritual",
+      "description": "Our radiance ritual: cleanse, moisturise and finish with soft lips.",
+      "items": [
+        {
+          "productId": "kumkumadi-soap",
+          "qty": 1
+        },
+        {
+          "productId": "kumkumadi-moisturizer",
+          "qty": 1
+        },
+        {
+          "productId": "mango-butter-lip-balm",
+          "qty": 1
+        }
+      ],
+      "price": 89,
+      "featured": true,
+      "slug": "kumkumadi-glow-ritual",
+      "active": true
+    },
+    {
+      "id": "coffee-lovers-set",
+      "name": "Coffee Lovers Set",
+      "description": "Exfoliate, cleanse and hydrate with real coffee and vanilla.",
+      "items": [
+        {
+          "productId": "coffee-cream-soap",
+          "qty": 1
+        },
+        {
+          "productId": "coffee-vanilla-moisturizer",
+          "qty": 1
+        },
+        {
+          "productId": "vanilla-herbal-soap",
+          "qty": 1
+        }
+      ],
+      "price": 89,
+      "featured": true,
+      "slug": "coffee-lovers-set",
+      "active": true
+    },
+    {
+      "id": "sensitive-skin-trio",
+      "name": "Sensitive Skin Trio",
+      "description": "Three gentle bars for skin that reacts easily.",
+      "items": [
+        {
+          "productId": "aloe-vera-soap",
+          "qty": 1
+        },
+        {
+          "productId": "dahlia-herbal-face-soap",
+          "qty": 1
+        },
+        {
+          "productId": "lavender-soap",
+          "qty": 1
+        }
+      ],
+      "price": 65,
+      "featured": true,
+      "slug": "sensitive-skin-trio",
+      "active": true
+    },
+    {
+      "id": "lip-care-duo",
+      "name": "Lip Care Duo",
+      "description": "Everyday protection and a naturally fuller look.",
+      "items": [
+        {
+          "productId": "mango-butter-lip-balm",
+          "qty": 1
+        },
+        {
+          "productId": "lip-plump-balm",
+          "qty": 1
+        }
+      ],
+      "price": 45,
+      "featured": false,
+      "slug": "lip-care-duo",
+      "active": true
+    },
+    {
+      "id": "full-body-ritual",
+      "name": "Full Body Ritual",
+      "description": "Choose any soap, any moisturizer and any body oil.",
+      "slots": [
+        {
+          "category": "soaps",
+          "label": "Your soap"
+        },
+        {
+          "category": "moisturizers",
+          "label": "Your moisturizer"
+        },
+        {
+          "category": "oils",
+          "label": "Your body oil"
+        }
+      ],
+      "price": 109,
+      "featured": true,
+      "slug": "full-body-ritual",
+      "active": true
+    },
+    {
+      "id": "complete-soap-collection",
+      "name": "Complete Soap Collection",
+      "description": "All 8 handmade soaps. Find your favourite, or share them.",
+      "items": [
+        {
+          "productId": "kumkumadi-soap",
+          "qty": 1
+        },
+        {
+          "productId": "dahlia-herbal-face-soap",
+          "qty": 1
+        },
+        {
+          "productId": "vanilla-herbal-soap",
+          "qty": 1
+        },
+        {
+          "productId": "coffee-cream-soap",
+          "qty": 1
+        },
+        {
+          "productId": "lavender-soap",
+          "qty": 1
+        },
+        {
+          "productId": "sandalwood-herbal-soap",
+          "qty": 1
+        },
+        {
+          "productId": "aloe-vera-soap",
+          "qty": 1
+        },
+        {
+          "productId": "saffron-sandal-soap",
+          "qty": 1
+        }
+      ],
+      "price": 169,
+      "featured": false,
+      "slug": "complete-soap-collection",
+      "active": true
+    },
+    {
+      "id": "full-collection",
+      "name": "The Full Roots and Muds Collection",
+      "description": "Every product we make, all 15, in one box.",
+      "items": [
+        {
+          "productId": "kumkumadi-soap",
+          "qty": 1
+        },
+        {
+          "productId": "dahlia-herbal-face-soap",
+          "qty": 1
+        },
+        {
+          "productId": "vanilla-herbal-soap",
+          "qty": 1
+        },
+        {
+          "productId": "coffee-cream-soap",
+          "qty": 1
+        },
+        {
+          "productId": "lavender-soap",
+          "qty": 1
+        },
+        {
+          "productId": "sandalwood-herbal-soap",
+          "qty": 1
+        },
+        {
+          "productId": "aloe-vera-soap",
+          "qty": 1
+        },
+        {
+          "productId": "saffron-sandal-soap",
+          "qty": 1
+        },
+        {
+          "productId": "haldi-chandan-moisturizer",
+          "qty": 1
+        },
+        {
+          "productId": "kumkumadi-moisturizer",
+          "qty": 1
+        },
+        {
+          "productId": "coffee-vanilla-moisturizer",
+          "qty": 1
+        },
+        {
+          "productId": "herbal-oil",
+          "qty": 1
+        },
+        {
+          "productId": "calming-nourishing-oil",
+          "qty": 1
+        },
+        {
+          "productId": "mango-butter-lip-balm",
+          "qty": 1
+        },
+        {
+          "productId": "lip-plump-balm",
+          "qty": 1
+        }
+      ],
+      "price": 399,
+      "featured": false,
+      "slug": "full-collection",
+      "active": true
+    }
+  ]
+}

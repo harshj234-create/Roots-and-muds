@@ -1,0 +1,95 @@
+{
+  "name": "Roots and Muds",
+  "domain": "https://rootsandmuds.ae",
+  "tagline": "We make skincare that's safe for your skin and kind to the planet.",
+  "supportingLine": "No harsh chemicals. No parabens. No fake scents. Just clean, cruelty-free care.",
+  "badges": [
+    "Cruelty Free",
+    "100% Natural Ingredients",
+    "Vegan",
+    "Organic",
+    "Handmade"
+  ],
+  "phoneDisplay": "050 550 6800",
+  "phoneE164": "+971505506800",
+  "whatsapp": "971505506800",
+  "email": "",
+  "instagram": "",
+  "locale": {
+    "lang": "en",
+    "dir": "ltr"
+  },
+  "emirates": [
+    "Abu Dhabi",
+    "Dubai",
+    "Sharjah",
+    "Ajman",
+    "Umm Al Quwain",
+    "Ras Al Khaimah",
+    "Fujairah"
+  ],
+  "deliverySlots": [
+    "Any time",
+    "Morning (9am – 12pm)",
+    "Afternoon (12pm – 4pm)",
+    "Evening (4pm – 9pm)"
+  ],
+  "deliveryEstimate": "1–3 working days across the UAE",
+  "brandStory": [
+    "Roots and Muds began with a simple wish: skincare we would happily use on our own families. Every bar, cream, oil and balm is made by hand in small batches here in the UAE.",
+    "We draw on Ayurveda, India's traditional system of wellbeing, using ingredients it has trusted for centuries: Kumkumadi oil, saffron, sandalwood and turmeric.",
+    "What we leave out matters just as much. No parabens, no harsh chemicals and no synthetic fragrance, so any scent you notice comes from the ingredients themselves. Everything is vegan and never tested on animals."
+  ],
+  "faq": [
+    {
+      "q": "How do I pay?",
+      "a": "Cash on delivery only. Place your order online, then pay the courier in cash when it arrives. There is nothing to pay online and no card needed."
+    },
+    {
+      "q": "Where do you deliver and how much does it cost?",
+      "a": "We deliver to all seven emirates. Delivery is AED 15, and free on orders of AED 150 or more."
+    },
+    {
+      "q": "How long does delivery take?",
+      "a": "Usually 1–3 working days. We will call or WhatsApp you to confirm your order and agree a delivery time."
+    },
+    {
+      "q": "How do bundle discounts work?",
+      "a": "Ready-made bundles have a fixed lower price. With Mix & Match you pick any products: 3–4 items get 5% off, 5–7 get 10% and 8 or more get 15%. Include a soap, a moisturizer and a body oil for an extra 5% Complete Routine discount. If you add items to your cart one by one, we apply the best saving automatically."
+    },
+    {
+      "q": "Are your products really natural?",
+      "a": "Yes. Our products are handmade with natural ingredients, are vegan and cruelty-free, and contain no parabens or synthetic fragrance."
+    },
+    {
+      "q": "Are they suitable for sensitive skin?",
+      "a": "Our Aloe Vera, Dahlia, Lavender and Sandalwood soaps are made to be gentle on sensitive skin. As with any skincare, patch-test on a small area first, and check the ingredients if you have known allergies."
+    },
+    {
+      "q": "How should I store my soaps?",
+      "a": "Keep bars on a draining soap dish away from running water. Handmade soap lasts much longer when it can dry out between uses."
+    },
+    {
+      "q": "Can I send a gift?",
+      "a": "Yes. Build a Mix & Match box and add a gift box with a handwritten note. Add the recipient's address at checkout and tell us in the delivery notes that it's a gift."
+    },
+    {
+      "q": "Can I change or cancel my order?",
+      "a": "Message us on WhatsApp as soon as possible. We can change or cancel any order that hasn't left for delivery yet."
+    }
+  ],
+  "policies": {
+    "delivery": [
+      "We deliver to all seven emirates: Abu Dhabi, Dubai, Sharjah, Ajman, Umm Al Quwain, Ras Al Khaimah and Fujairah.",
+      "Delivery costs AED 15 per order and is free on orders of AED 150 or more.",
+      "Orders usually arrive within 1–3 working days. After you order we will contact you by phone or WhatsApp to confirm the details and agree a delivery time.",
+      "Payment is cash on delivery. Please have the exact amount ready if you can; the total is shown on your order confirmation."
+    ],
+    "returns": [
+      "Because our products are handmade skincare, we can't accept returns of opened or used items for hygiene reasons.",
+      "If something arrives damaged or isn't what you ordered, message us on WhatsApp within 48 hours with a photo and we will replace it free of charge.",
+      "Unopened items can be returned within 7 days of delivery. Contact us first to arrange collection; we refund in cash or as store credit once we receive the item.",
+      "If you refuse a cash-on-delivery order at the door, we may ask for the delivery fee on your next order."
+    ]
+  }
+}

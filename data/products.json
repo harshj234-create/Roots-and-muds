@@ -1,0 +1,352 @@
+{
+  "categories": [
+    {
+      "id": "soaps",
+      "name": "Body Soaps",
+      "shortName": "Soaps",
+      "description": "Handmade bars for face and body."
+    },
+    {
+      "id": "moisturizers",
+      "name": "Body Moisturizers",
+      "shortName": "Moisturizers",
+      "description": "Rich creams for daily nourishment."
+    },
+    {
+      "id": "oils",
+      "name": "Body Oils",
+      "shortName": "Oils",
+      "description": "Calming oils for deep, lasting moisture."
+    },
+    {
+      "id": "lip-balms",
+      "name": "Lip Balms",
+      "shortName": "Lip Balms",
+      "description": "Soft, protected, happy lips."
+    }
+  ],
+  "products": [
+    {
+      "id": "kumkumadi-soap",
+      "slug": "kumkumadi-soap",
+      "name": "Kumkumadi Soap",
+      "category": "soaps",
+      "price": 25,
+      "size": "100 g",
+      "shortDescription": "Ayurvedic Kumkumadi oil with saffron and sandalwood to brighten and nourish.",
+      "description": "Our signature bar, made in small batches around Kumkumadi oil, a traditional Ayurvedic blend prized for radiance. Saffron and sandalwood give it a warm, golden character, and the rich lather cleanses without leaving skin tight. A daily ritual for skin that looks brighter and feels nourished.",
+      "keyIngredients": [
+        "Kumkumadi oil",
+        "Saffron",
+        "Sandalwood"
+      ],
+      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "images": [
+        "/images/products/kumkumadi-soap-1.svg",
+        "/images/products/kumkumadi-soap-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": true
+    },
+    {
+      "id": "dahlia-herbal-face-soap",
+      "slug": "dahlia-herbal-face-soap",
+      "name": "Dahlia Herbal Face Soap",
+      "category": "soaps",
+      "price": 25,
+      "size": "100 g",
+      "shortDescription": "A gentle herbal bar for sensitive skin and everyday face care.",
+      "description": "Made for the delicate skin of your face. This soft, low-lather herbal bar cleanses gently, so it suits sensitive skin that reacts to harsher soaps. Skin is left clean, calm and comfortable.",
+      "keyIngredients": [
+        "Herbal extracts",
+        "Plant oils"
+      ],
+      "howToUse": "Lather between your hands, massage the foam gently over damp face avoiding the eye area, then rinse well. Use morning and night.",
+      "images": [
+        "/images/products/dahlia-herbal-face-soap-1.svg",
+        "/images/products/dahlia-herbal-face-soap-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": false
+    },
+    {
+      "id": "vanilla-herbal-soap",
+      "slug": "vanilla-herbal-soap",
+      "name": "Vanilla Herbal Soap",
+      "category": "soaps",
+      "price": 25,
+      "size": "100 g",
+      "shortDescription": "Nourishes dry skin and leaves it feeling refreshed.",
+      "description": "A comforting herbal bar for dry skin. Creamy plant oils help nourish while you cleanse, and the soft vanilla note comes from natural ingredients, never synthetic fragrance. Skin feels refreshed, never stripped.",
+      "keyIngredients": [
+        "Vanilla",
+        "Plant oils",
+        "Herbal extracts"
+      ],
+      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "images": [
+        "/images/products/vanilla-herbal-soap-1.svg",
+        "/images/products/vanilla-herbal-soap-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": false
+    },
+    {
+      "id": "coffee-cream-soap",
+      "slug": "coffee-cream-soap",
+      "name": "Coffee Cream Soap",
+      "category": "soaps",
+      "price": 25,
+      "size": "100 g",
+      "shortDescription": "Real coffee grounds gently exfoliate, with a fresh coffee aroma.",
+      "description": "Your morning coffee, made for the shower. Fine coffee grounds buff away dull, rough skin while a creamy base keeps it soft. The natural aroma of fresh coffee wakes you up without any fake scent.",
+      "keyIngredients": [
+        "Coffee grounds",
+        "Plant oils"
+      ],
+      "howToUse": "Lather on damp skin and massage in small circles to let the coffee grounds exfoliate, then rinse. Best on the body; use gently 2–3 times a week on rough areas.",
+      "images": [
+        "/images/products/coffee-cream-soap-1.svg",
+        "/images/products/coffee-cream-soap-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": true
+    },
+    {
+      "id": "lavender-soap",
+      "slug": "lavender-soap",
+      "name": "Lavender Soap",
+      "category": "soaps",
+      "price": 25,
+      "size": "100 g",
+      "shortDescription": "Gentle cleansing with soothing, relaxing lavender.",
+      "description": "A calming bar for the end of the day. Lavender brings a soft, soothing aroma to a gentle lather that cleanses without harshness, leaving skin clean and you a little more relaxed.",
+      "keyIngredients": [
+        "Lavender",
+        "Plant oils"
+      ],
+      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "images": [
+        "/images/products/lavender-soap-1.svg",
+        "/images/products/lavender-soap-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": false
+    },
+    {
+      "id": "sandalwood-herbal-soap",
+      "slug": "sandalwood-herbal-soap",
+      "name": "Sandalwood Herbal Soap",
+      "category": "soaps",
+      "price": 25,
+      "size": "100 g",
+      "shortDescription": "Gentle and nourishing, suited to sensitive skin.",
+      "description": "Sandalwood has been part of Ayurvedic skincare for centuries. This herbal bar pairs it with nourishing plant oils for a gentle cleanse that suits sensitive skin, with a warm, woody aroma that comes from the ingredients themselves.",
+      "keyIngredients": [
+        "Sandalwood",
+        "Herbal extracts",
+        "Plant oils"
+      ],
+      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "images": [
+        "/images/products/sandalwood-herbal-soap-1.svg",
+        "/images/products/sandalwood-herbal-soap-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": false
+    },
+    {
+      "id": "aloe-vera-soap",
+      "slug": "aloe-vera-soap",
+      "name": "Aloe Vera Soap",
+      "category": "soaps",
+      "price": 25,
+      "size": "100 g",
+      "shortDescription": "Gentle on sensitive skin, and a favourite with men too.",
+      "description": "Fresh, simple and kind to sensitive skin. Aloe vera helps keep skin comfortable after cleansing, and the clean, unfussy feel makes it a favourite for men as well as women.",
+      "keyIngredients": [
+        "Aloe vera",
+        "Plant oils"
+      ],
+      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "images": [
+        "/images/products/aloe-vera-soap-1.svg",
+        "/images/products/aloe-vera-soap-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": false
+    },
+    {
+      "id": "saffron-sandal-soap",
+      "slug": "saffron-sandal-soap",
+      "name": "Saffron Sandal Soap",
+      "category": "soaps",
+      "price": 25,
+      "size": "100 g",
+      "shortDescription": "For dry skin, on face and body.",
+      "description": "A rich bar for dry skin that you can use on both face and body. Saffron and sandalwood, a classic Ayurvedic pairing, come together in a creamy lather that leaves skin soft and nourished.",
+      "keyIngredients": [
+        "Saffron",
+        "Sandalwood",
+        "Plant oils"
+      ],
+      "howToUse": "Wet the soap and your skin, work up a soft lather between your hands, massage gently and rinse with lukewarm water. Keep the bar on a draining soap dish between uses so it lasts longer.",
+      "images": [
+        "/images/products/saffron-sandal-soap-1.svg",
+        "/images/products/saffron-sandal-soap-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": false
+    },
+    {
+      "id": "haldi-chandan-moisturizer",
+      "slug": "haldi-chandan-moisturizer",
+      "name": "Haldi Chandan Moisturizer",
+      "category": "moisturizers",
+      "price": 50,
+      "size": "192 g",
+      "shortDescription": "Turmeric and sandalwood for deep nourishment and a natural glow.",
+      "description": "Haldi (turmeric) and chandan (sandalwood) are the heart of traditional Indian skincare. Our body moisturizer brings them together in a rich cream that nourishes deeply and leaves skin with a healthy, natural glow.",
+      "keyIngredients": [
+        "Turmeric (haldi)",
+        "Sandalwood (chandan)",
+        "Plant butters"
+      ],
+      "howToUse": "Smooth a small amount over clean, slightly damp skin, ideally after your bath or shower. Massage in upward strokes until absorbed. Use daily, morning or night.",
+      "images": [
+        "/images/products/haldi-chandan-moisturizer-1.svg",
+        "/images/products/haldi-chandan-moisturizer-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": true
+    },
+    {
+      "id": "kumkumadi-moisturizer",
+      "slug": "kumkumadi-moisturizer",
+      "name": "Kumkumadi Moisturizer",
+      "category": "moisturizers",
+      "price": 50,
+      "size": "192 g",
+      "shortDescription": "Lightweight Kumkumadi oil and saffron to hydrate and boost radiance.",
+      "description": "All the radiance of our Kumkumadi ritual in a lightweight body moisturizer. Kumkumadi oil and saffron hydrate without heaviness and help skin look luminous. It absorbs quickly, so you can dress straight away.",
+      "keyIngredients": [
+        "Kumkumadi oil",
+        "Saffron",
+        "Plant oils"
+      ],
+      "howToUse": "Smooth a small amount over clean, slightly damp skin, ideally after your bath or shower. Massage in upward strokes until absorbed. Use daily, morning or night.",
+      "images": [
+        "/images/products/kumkumadi-moisturizer-1.svg",
+        "/images/products/kumkumadi-moisturizer-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": true
+    },
+    {
+      "id": "coffee-vanilla-moisturizer",
+      "slug": "coffee-vanilla-moisturizer",
+      "name": "Coffee & Vanilla Moisturizer",
+      "category": "moisturizers",
+      "price": 50,
+      "size": "192 g",
+      "shortDescription": "Deep hydration with a smooth, velvety texture.",
+      "description": "A smooth, deeply hydrating cream with the warm, gourmand aroma of coffee and vanilla from natural ingredients. It melts into skin and leaves it soft and supple. The natural partner to our Coffee Cream Soap.",
+      "keyIngredients": [
+        "Coffee",
+        "Vanilla",
+        "Plant butters"
+      ],
+      "howToUse": "Smooth a small amount over clean, slightly damp skin, ideally after your bath or shower. Massage in upward strokes until absorbed. Use daily, morning or night.",
+      "images": [
+        "/images/products/coffee-vanilla-moisturizer-1.svg",
+        "/images/products/coffee-vanilla-moisturizer-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": false
+    },
+    {
+      "id": "herbal-oil",
+      "slug": "herbal-oil",
+      "name": "Herbal Oil",
+      "category": "oils",
+      "price": 50,
+      "size": "96 g",
+      "shortDescription": "A calming body oil that hydrates and soothes.",
+      "description": "A calming blend of herbs infused in nourishing plant oils. Massaged into skin after bathing, it hydrates, soothes and turns your routine into a few quiet minutes for yourself.",
+      "keyIngredients": [
+        "Herbal infusion",
+        "Plant oils"
+      ],
+      "howToUse": "Warm a few drops between your palms and massage into damp skin after bathing, focusing on dry areas such as elbows, knees and heels. A little goes a long way.",
+      "images": [
+        "/images/products/herbal-oil-1.svg",
+        "/images/products/herbal-oil-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": false
+    },
+    {
+      "id": "calming-nourishing-oil",
+      "slug": "calming-nourishing-oil",
+      "name": "Calming Nourishing Oil",
+      "category": "oils",
+      "price": 50,
+      "size": "96 g",
+      "shortDescription": "Softens skin with deep, lasting moisture.",
+      "description": "For skin that needs more than a cream. This nourishing body oil softens and locks in moisture that lasts all day, with a calming aroma that comes from its natural ingredients.",
+      "keyIngredients": [
+        "Plant oils",
+        "Herbal extracts"
+      ],
+      "howToUse": "Warm a few drops between your palms and massage into damp skin after bathing, focusing on dry areas such as elbows, knees and heels. A little goes a long way.",
+      "images": [
+        "/images/products/calming-nourishing-oil-1.svg",
+        "/images/products/calming-nourishing-oil-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": false
+    },
+    {
+      "id": "mango-butter-lip-balm",
+      "slug": "mango-butter-lip-balm",
+      "name": "Mango Butter Lip Balm",
+      "category": "lip-balms",
+      "price": 25,
+      "size": "15 g",
+      "shortDescription": "Keeps lips soft, hydrated and protected.",
+      "description": "Rich mango butter in a smooth balm that keeps lips soft and hydrated, and helps protect them from the dry UAE air and air-conditioning.",
+      "keyIngredients": [
+        "Mango butter",
+        "Plant oils"
+      ],
+      "howToUse": "Glide over clean lips whenever they feel dry. Apply a thicker layer before bed for overnight softness.",
+      "images": [
+        "/images/products/mango-butter-lip-balm-1.svg",
+        "/images/products/mango-butter-lip-balm-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": true
+    },
+    {
+      "id": "lip-plump-balm",
+      "slug": "lip-plump-balm",
+      "name": "Lip Plump Balm",
+      "category": "lip-balms",
+      "price": 25,
+      "size": "15 g",
+      "shortDescription": "A herbal balm for smooth, soft, naturally fuller-looking lips.",
+      "description": "A herbal lip balm that smooths and softens, giving lips a naturally fuller look without stinging plumping agents.",
+      "keyIngredients": [
+        "Herbal extracts",
+        "Plant butters"
+      ],
+      "howToUse": "Glide over clean lips whenever they feel dry. Apply a thicker layer before bed for overnight softness.",
+      "images": [
+        "/images/products/lip-plump-balm-1.svg",
+        "/images/products/lip-plump-balm-2.svg"
+      ],
+      "inStock": true,
+      "bestseller": false
+    }
+  ]
+}

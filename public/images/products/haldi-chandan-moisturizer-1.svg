@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Haldi Chandan Moisturizer">
+  <rect width="800" height="1000" fill="#E4E2D3"/>
+  <path d="M80 620 C 140 470, 300 430, 420 450 C 560 470, 700 520, 720 640 C 740 790, 600 900, 400 905 C 200 910, 40 800, 80 620z" fill="#d6d4c5"/>
+         <g><ellipse cx="400" cy="760" rx="220" ry="30" fill="#000" opacity=".08"/>
+  <path d="M215 470 h370 v250 a40 40 0 0 1 -40 40 h-290 a40 40 0 0 1 -40 -40z" fill="#F4EFE6"/>
+  <path d="M215 470 h370 v250 a40 40 0 0 1 -40 40 h-290 a40 40 0 0 1 -40 -40z" fill="#D9A441" opacity=".18"/>
+  <rect x="245" y="545" width="310" height="140" rx="10" fill="#D9A441"/>
+  <circle cx="400" cy="615" r="44" fill="none" stroke="#bd8825" stroke-width="3" opacity=".55"/>
+   <path d="M400 639.2 C 400 615, 400 606.2, 400 590.8 M400 612.8 C 382.4 608.4, 380.2 595.2, 378 593 C 395.6 593, 400 601.8, 400 612.8 M400 621.6 C 415.4 615, 419.8 604, 422 601.8 C 406.6 600.92, 400 610.6, 400 621.6" fill="none" stroke="#bd8825" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+  <rect x="200" y="380" width="400" height="100" rx="26" fill="#bb8623"/>
+  <rect x="200" y="380" width="400" height="30" rx="15" fill="#cf9a37" opacity=".6"/></g>
+  <text x="400" y="960" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#6B6358" opacity=".8">Haldi Chandan Moisturizer</text>
+</svg>

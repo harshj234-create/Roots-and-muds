@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Calming Nourishing Oil">
+  <rect width="800" height="1000" fill="#E4E2D3"/>
+  <path d="M80 620 C 140 470, 300 430, 420 450 C 560 470, 700 520, 720 640 C 740 790, 600 900, 400 905 C 200 910, 40 800, 80 620z" fill="#d6d4c5"/>
+         <g><ellipse cx="400" cy="800" rx="160" ry="26" fill="#000" opacity=".08"/>
+  <rect x="372" y="170" width="56" height="70" rx="26" fill="#2E2A24"/>
+  <rect x="352" y="230" width="96" height="70" rx="10" fill="#3A342C"/>
+  <path d="M370 300 h60 v40 c70 20 110 60 110 130 v270 a40 40 0 0 1 -40 40 h-200 a40 40 0 0 1 -40 -40 v-270 c0 -70 40 -110 110 -130z" fill="#916226"/>
+  <path d="M290 470 c0 -40 20 -80 60 -100" stroke="#fff" stroke-width="10" fill="none" opacity=".18" stroke-linecap="round"/>
+  <rect x="285" y="520" width="230" height="170" rx="10" fill="#F4EFE6"/>
+  <circle cx="400" cy="605" r="46" fill="none" stroke="#9d6e32" stroke-width="3" opacity=".55"/>
+   <path d="M400 630.3 C 400 605, 400 595.8, 400 579.7 M400 602.7 C 381.6 598.1, 379.3 584.3, 377 582 C 395.4 582, 400 591.2, 400 602.7 M400 611.9 C 416.1 605, 420.7 593.5, 423 591.2 C 406.9 590.28, 400 600.4, 400 611.9" fill="none" stroke="#9d6e32" stroke-width="3" stroke-linecap="round" opacity=".55"/></g>
+  <text x="400" y="960" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#6B6358" opacity=".8">Calming Nourishing Oil</text>
+</svg>

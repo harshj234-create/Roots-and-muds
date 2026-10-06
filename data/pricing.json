@@ -1,0 +1,42 @@
+{
+  "currency": "AED",
+  "mixAndMatch": {
+    "tiers": [
+      {
+        "minItems": 3,
+        "percent": 5
+      },
+      {
+        "minItems": 5,
+        "percent": 10
+      },
+      {
+        "minItems": 8,
+        "percent": 15
+      }
+    ],
+    "completeRoutine": {
+      "enabled": true,
+      "percent": 5,
+      "label": "Complete Routine",
+      "requiredCategories": [
+        "soaps",
+        "moisturizers",
+        "oils"
+      ]
+    }
+  },
+  "applyToCart": {
+    "enabled": true,
+    "note": "Automatically gives loose cart items the best Mix & Match tier or ready-made bundle price"
+  },
+  "giftBox": {
+    "enabled": true,
+    "price": 10,
+    "label": "Gift box with handwritten note"
+  },
+  "delivery": {
+    "fee": 15,
+    "freeFrom": 150
+  }
+}
