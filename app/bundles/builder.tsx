@@ -257,7 +257,7 @@ export function Builder() {
               key={k}
               aria-hidden="true"
               style={{
-                background: ["#c9f24d", "#ff4f8b", "#ff8a2b", "#b9a7ff", "#12a594"][k % 5],
+                background: ["#a9b47c", "#d3a08d", "#cf9a45", "#b29d9a", "#7f9270"][k % 5],
                 ["--x" as string]: `${Math.cos((k / 18) * Math.PI * 2) * (140 + (k % 3) * 60)}px`,
                 ["--y" as string]: `${Math.sin((k / 18) * Math.PI * 2) * (110 + (k % 4) * 40)}px`,
                 ["--r" as string]: `${k * 40}deg`,

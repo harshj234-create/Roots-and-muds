@@ -4,26 +4,27 @@
    Logical properties (margin-inline, inset-inline…) throughout, so an Arabic RTL version mirrors cleanly. */
 
 :root {
-  --paper: #fffaf3;
-  --paper-2: #fff1e3;
-  --white: #ffffff;
-  --ink: #1d1410;
-  --ink-2: #5b4a40;
-  --line: #ecdccc;
-  --lime: #c9f24d;
-  --lime-deep: #3d5a00;
-  --pink: #ff4f8b;
-  --pink-soft: #ffd9e6;
-  --tangerine: #ff8a2b;
-  --tangerine-soft: #ffe2c8;
-  --teal: #12a594;
-  --teal-soft: #ccf2ec;
-  --lilac: #b9a7ff;
-  --lilac-soft: #ebe5ff;
-  --olive: #6e7b24;
-  --butter: #ffe08a;
-  --danger: #c4211f;
-  --ok: #1e7a45;
+  /* Earthy palette: oat, sand, cocoa, sage-matcha, rose clay, turmeric, sage, mauve */
+  --paper: #f5efe4;
+  --paper-2: #ebe1d0;
+  --white: #fffcf6;
+  --ink: #2b211b;
+  --ink-2: #66574b;
+  --line: #dccdb8;
+  --lime: #a9b47c;
+  --lime-deep: #4f5a2b;
+  --pink: #d3a08d;
+  --pink-soft: #efdcd2;
+  --tangerine: #cf9a45;
+  --tangerine-soft: #f0dfc2;
+  --teal: #7f9270;
+  --teal-soft: #dfe5d3;
+  --lilac: #b29d9a;
+  --lilac-soft: #ebe1dd;
+  --olive: #5f6b3a;
+  --butter: #e6d3ad;
+  --danger: #a3341f;
+  --ok: #4f6b2f;
 
   --font-display: var(--font-bricolage), "Arial Black", system-ui, sans-serif;
   --font-sans: var(--font-figtree), system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -3077,7 +3078,7 @@ td select {
 
 /* contrast: dark text on hot pink, deeper pink when pink is the text colour */
 :root {
-  --pink-ink: #c2185b;
+  --pink-ink: #9a4630;
 }
 a:hover,
 .link-btn:hover,
@@ -3148,4 +3149,186 @@ a:hover,
 .mini,
 .pick {
   border-color: var(--ink);
+}
+
+/* earthy refinements */
+.marquee {
+  color: var(--butter);
+}
+.marquee span::after {
+  color: var(--lime);
+}
+.footer-big {
+  color: var(--butter);
+}
+.site-footer h2,
+.story .label {
+  color: var(--lime);
+}
+.site-footer a:hover {
+  color: var(--butter);
+}
+.cart-count {
+  color: var(--butter);
+}
+.qty-badge {
+  color: var(--butter);
+}
+.add-round.done {
+  color: var(--butter);
+}
+.toast {
+  box-shadow: 4px 4px 0 var(--lime);
+}
+.toast a {
+  color: var(--butter);
+}
+.meter span {
+  background: repeating-linear-gradient(-45deg, var(--lime) 0 10px, #98a46b 10px 20px);
+}
+.wa-float,
+.btn-wa {
+  background: #7fb48a;
+}
+.story-art .photo {
+  box-shadow: 8px 8px 0 var(--pink);
+}
+:focus-visible {
+  outline-color: var(--pink-ink);
+}
+
+/* ---------- Videos ---------- */
+.video-band {
+  position: relative;
+  min-height: clamp(380px, 60vh, 620px);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  border-block: var(--border);
+  background: var(--ink);
+  color: var(--white);
+  isolation: isolate;
+}
+.video-band .bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.video-band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgb(43 33 27 / 0.05) 30%, rgb(43 33 27 / 0.78));
+  z-index: -1;
+}
+.video-band-inner {
+  padding-block: clamp(2rem, 1rem + 4vw, 4rem);
+}
+.video-band h2 {
+  color: var(--white);
+  font-size: clamp(2.4rem, 1.4rem + 4.5vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  max-width: 12ch;
+  margin-block-end: 1rem;
+}
+.video-band p {
+  color: #f1e8dc;
+  font-size: var(--step-1);
+  max-width: 32em;
+  margin-block-end: 1.5rem;
+}
+.video-band .label {
+  color: var(--butter);
+}
+.video-band .label::before {
+  background: var(--butter);
+}
+.vid-btn {
+  position: absolute;
+  top: 1rem;
+  inset-inline-end: 1rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 99px;
+  border: var(--border);
+  background: var(--white);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+.reels {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0.5rem 0.5rem 1.25rem;
+  margin-inline: -0.5rem;
+  position: relative;
+  scrollbar-width: thin;
+}
+.reels > div {
+  flex: 0 0 min(64vw, 260px);
+  scroll-snap-align: start;
+}
+.reel {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 9 / 16;
+  border: var(--border);
+  border-radius: 26px;
+  overflow: hidden;
+  background: var(--ink);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s var(--ease-pop);
+}
+.reel:hover {
+  transform: translateY(-4px) rotate(-1deg);
+}
+.reel video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.reel figcaption {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  padding: 2.5rem 0.9rem 0.9rem;
+  background: linear-gradient(180deg, transparent, rgb(43 33 27 / 0.85));
+  color: var(--white);
+  display: grid;
+  gap: 0.5rem;
+  justify-items: start;
+}
+.reel figcaption strong {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.reel-link {
+  background: var(--butter);
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.reel-link:hover {
+  color: var(--ink);
+  background: var(--lime);
+}
+.cat-tile .txt p {
+  color: var(--ink);
 }

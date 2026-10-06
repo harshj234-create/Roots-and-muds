@@ -3,7 +3,7 @@
     {
       "id": "kumkumadi",
       "name": "Kumkumadi",
-      "color": "#F29C6B",
+      "color": "#d0a58d",
       "text": "A classic Ayurvedic glow blend of herbs, traditionally loved for a brighter-looking complexion.",
       "products": [
         "kumkumadi-soap",
@@ -13,7 +13,7 @@
     {
       "id": "saffron",
       "name": "Saffron",
-      "color": "#FFC53D",
+      "color": "#ceb26e",
       "text": "Kesar, the golden spice of Ayurvedic beauty rituals. Real strands go into our Kesar Chandan bar.",
       "products": [
         "saffron-sandal-soap"
@@ -22,7 +22,7 @@
     {
       "id": "sandalwood",
       "name": "Sandalwood",
-      "color": "#DDBB92",
+      "color": "#cab9a5",
       "text": "Chandan: warm, woody and soothing. A centuries-old favourite for gentle care.",
       "products": [
         "saffron-sandal-soap",
@@ -33,7 +33,7 @@
     {
       "id": "turmeric",
       "name": "Turmeric",
-      "color": "#F7CB5A",
+      "color": "#d0ba81",
       "text": "Haldi, the golden root behind the classic Indian glow ritual.",
       "products": [
         "haldi-chandan-moisturizer"
@@ -42,7 +42,7 @@
     {
       "id": "rose",
       "name": "Rose",
-      "color": "#F4A6B8",
+      "color": "#e0bac3",
       "text": "Rose oil, rose water and real petals: softening, refreshing and very pretty.",
       "products": [
         "kumkumadi-soap",
@@ -54,7 +54,7 @@
     {
       "id": "coffee",
       "name": "Coffee",
-      "color": "#B98A68",
+      "color": "#a58d7c",
       "text": "Robusta coffee gently buffs away rough skin, and smells like your morning cup.",
       "products": [
         "coffee-cream-soap",
@@ -64,7 +64,7 @@
     {
       "id": "vanilla",
       "name": "Vanilla",
-      "color": "#EAD7B0",
+      "color": "#dbd2bf",
       "text": "Soft, cozy and comforting. Made for dry-skin days.",
       "products": [
         "vanilla-herbal-soap",
@@ -75,7 +75,7 @@
     {
       "id": "lavender",
       "name": "Lavender",
-      "color": "#C4B5F0",
+      "color": "#cbc4e1",
       "text": "The wind-down scent, from real lavender essential oil.",
       "products": [
         "lavender-soap",
@@ -85,7 +85,7 @@
     {
       "id": "aloe",
       "name": "Aloe vera",
-      "color": "#B5D99A",
+      "color": "#b7c9aa",
       "text": "Cool, fresh and famously gentle. It's in more of our range than you'd think.",
       "products": [
         "aloe-vera-soap",
@@ -99,7 +99,7 @@
     {
       "id": "mango",
       "name": "Mango butter",
-      "color": "#FFBE5C",
+      "color": "#d6b685",
       "text": "Rich, melty butter that keeps lips and skin soft and protected.",
       "products": [
         "mango-butter-lip-balm",
@@ -109,7 +109,7 @@
     {
       "id": "goat-milk",
       "name": "Goat milk",
-      "color": "#F3EEE2",
+      "color": "#efece6",
       "text": "The secret behind the creamy, gentle lather in every one of our soaps.",
       "products": [
         "kumkumadi-soap",
@@ -125,7 +125,7 @@
     {
       "id": "herbs",
       "name": "Ayurvedic herbs",
-      "color": "#A9C77F",
+      "color": "#a6b591",
       "text": "Bacopa, jatamansi, spikenard, nettle and liquorice, infused slowly into our body oils.",
       "products": [
         "herbal-oil",

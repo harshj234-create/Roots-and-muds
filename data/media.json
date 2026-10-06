@@ -1,17 +1,73 @@
 {
   "note": "Skincare clips from Pexels (free for commercial use, no attribution required: https://www.pexels.com/license/). The 'Save videos' GitHub job downloads, trims and compresses each clip into public/videos/.",
   "videos": [
-    { "id": "7815794", "slug": "soap-sponge", "title": "Soap bubbles on a sponge", "url": "https://videos.pexels.com/video-files/7815794/7815794-hd_1920_1080_25fps.mp4" },
-    { "id": "7250825", "slug": "soap-water", "title": "Soap bar under running water", "url": "https://videos.pexels.com/video-files/7250825/7250825-uhd_1440_2560_25fps.mp4" },
-    { "id": "8676947", "slug": "foam", "title": "Close-up of bubbling foam" },
-    { "id": "6801518", "slug": "oil-dropper", "title": "Pressing an oil dropper" },
-    { "id": "8131887", "slug": "serum-palm", "title": "Serum dripping on a palm" },
-    { "id": "4132712", "slug": "dropper-drip", "title": "Liquid dripping from a dropper", "url": "https://videos.pexels.com/video-files/4132712/4132712-hd_1280_720_25fps.mp4" },
-    { "id": "6812952", "slug": "lotion-dab", "title": "Getting a dab of lotion" },
-    { "id": "7218432", "slug": "cream-hands", "title": "Cream on hands" },
-    { "id": "38614860", "slug": "turmeric", "title": "Grinding turmeric root on a stone", "url": "https://videos.pexels.com/video-files/38614860/16400272_1080_1920_30fps.mp4" },
-    { "id": "5480205", "slug": "mortar", "title": "Herbs in a mortar and pestle" },
-    { "id": "5480226", "slug": "petals-jar", "title": "Flower petals going into a jar" },
-    { "id": "5498969", "slug": "lavender", "title": "Blooming lavender", "url": "https://videos.pexels.com/video-files/5498969/5498969-hd_1920_1080_25fps.mp4" }
+    {
+      "id": "5480226",
+      "slug": "petals-jar",
+      "title": "Flower petals going into a jar",
+      "caption": "Herbs, slowly infused",
+      "role": "band"
+    },
+    {
+      "id": "7815794",
+      "slug": "soap-sponge",
+      "title": "Soap bubbles on a sponge",
+      "url": "https://videos.pexels.com/video-files/7815794/7815794-hd_1920_1080_25fps.mp4",
+      "caption": "That creamy goat-milk lather",
+      "href": "/shop?category=soaps",
+      "linkLabel": "Shop soaps"
+    },
+    {
+      "id": "38614860",
+      "slug": "turmeric",
+      "title": "Grinding turmeric root on a stone",
+      "url": "https://videos.pexels.com/video-files/38614860/16400272_1080_1920_30fps.mp4",
+      "caption": "Haldi, straight from the root",
+      "href": "/products/haldi-chandan-moisturizer",
+      "linkLabel": "Haldi Chandan"
+    },
+    {
+      "id": "6812952",
+      "slug": "lotion-dab",
+      "title": "Getting a dab of lotion",
+      "caption": "Melts right in",
+      "href": "/shop?category=moisturizers",
+      "linkLabel": "Shop moisturizers"
+    },
+    {
+      "id": "4132712",
+      "slug": "dropper-drip",
+      "title": "Liquid dripping from a dropper",
+      "url": "https://videos.pexels.com/video-files/4132712/4132712-hd_1280_720_25fps.mp4",
+      "caption": "A few drops go a long way",
+      "href": "/shop?category=oils",
+      "linkLabel": "Shop body oils"
+    },
+    {
+      "id": "7250825",
+      "slug": "soap-water",
+      "title": "Soap bar under running water",
+      "url": "https://videos.pexels.com/video-files/7250825/7250825-uhd_1440_2560_25fps.mp4",
+      "caption": "Face and body, twice a day",
+      "href": "/#quiz",
+      "linkLabel": "Find your bar"
+    },
+    {
+      "id": "5498969",
+      "slug": "lavender",
+      "title": "Blooming lavender",
+      "url": "https://videos.pexels.com/video-files/5498969/5498969-hd_1920_1080_25fps.mp4",
+      "caption": "Wind-down mode",
+      "href": "/products/lavender-soap",
+      "linkLabel": "Lavender Soap"
+    },
+    {
+      "id": "5480205",
+      "slug": "mortar",
+      "title": "Herbs in a mortar and pestle",
+      "caption": "Ground the old way",
+      "href": "/about",
+      "linkLabel": "Our story"
+    }
   ]
 }

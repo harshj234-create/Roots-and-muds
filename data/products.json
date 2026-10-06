@@ -6,7 +6,7 @@
       "shortName": "Soaps",
       "description": "Handmade bars for face and body.",
       "image": "/images/shop/minimalist-still-life-with-natural-handmade-soap-2024-11-10-01-47-21-utc.jpg",
-      "color": "#FFC53D"
+      "color": "#e2c48f"
     },
     {
       "id": "moisturizers",
@@ -14,7 +14,7 @@
       "shortName": "Moisturizers",
       "description": "Rich creams for daily nourishment.",
       "image": "/images/shop/natural-cosmetics-set-moisturizing-cream-in-eco-f-2024-12-06-11-04-08-utc.jpg",
-      "color": "#C9B8FF"
+      "color": "#d9b4a6"
     },
     {
       "id": "oils",
@@ -22,7 +22,7 @@
       "shortName": "Oils",
       "description": "Calming oils for deep, lasting moisture.",
       "image": "/images/shop/sweet-liqueur-with-linden-and-honey-2025-03-24-04-38-43-utc.jpg",
-      "color": "#C9EE5A"
+      "color": "#bcc49b"
     },
     {
       "id": "lip-balms",
@@ -30,7 +30,7 @@
       "shortName": "Lip Balms",
       "description": "Soft, protected, happy lips.",
       "image": "/images/shop/colorful-lip-balms-in-round-tin-cases-on-leather-w-2025-04-02-15-19-00-utc.jpg",
-      "color": "#FFB3A1"
+      "color": "#d8ab92"
     }
   ],
   "products": [
@@ -65,7 +65,7 @@
         "glow"
       ],
       "scent": "warm",
-      "color": "#F2A65A",
+      "color": "#c8a684",
       "legacyHandle": "kumkumadi-soap",
       "ingredients": "Coconut oil, kumkumadi oil, kakadu plum oil, jojoba oil, mango butter, sunflower oil, sesame oil infused with rose oil, goat milk, water, NaOH.",
       "benefit": "Helps keep skin nourished.",
@@ -103,7 +103,7 @@
         "gentle"
       ],
       "scent": "floral",
-      "color": "#EBA9B8",
+      "color": "#d9bbc2",
       "legacyHandle": "dahlia-soap",
       "ingredients": "Coconut oil, grapeseed oil, jojoba oil, kokum butter, gotu kola oil, aloe vera juice, dahlia oil, goat milk, water, NaOH.",
       "benefit": "Helps keep skin feeling refreshed and hydrated.",
@@ -141,7 +141,7 @@
         "hydrate"
       ],
       "scent": "cozy",
-      "color": "#EAD7B0",
+      "color": "#dad2c0",
       "legacyHandle": "vanilla-soap",
       "ingredients": "Coconut oil, almond oil, jojoba oil, shea butter, flaxseed oil, sunflower oil, aloe vera juice, vanilla oil, goat milk, water, NaOH.",
       "benefit": "Helps keep skin feeling soft and hydrated.",
@@ -180,7 +180,7 @@
         "exfoliate"
       ],
       "scent": "cozy",
-      "color": "#B98A68",
+      "color": "#a38e7e",
       "legacyHandle": "coffee-soap",
       "ingredients": "Coconut oil, tamanu oil, jojoba oil, cocoa butter, sesame oil, sunflower oil infused with robusta coffee powder, goat milk, water, NaOH.",
       "benefit": "Helps maintain smooth, supple skin.",
@@ -220,7 +220,7 @@
         "gentle"
       ],
       "scent": "floral",
-      "color": "#C4B5F0",
+      "color": "#ccc5e0",
       "legacyHandle": "lavender-soap",
       "ingredients": "Coconut oil, jojoba oil, watermelon seed oil, sesame oil, sunflower oil, shea butter, olive oil, castor oil, goat milk, gangajal, NaOH, lavender essential oil.",
       "benefit": "Helps rejuvenate the skin.",
@@ -259,7 +259,7 @@
         "gentle"
       ],
       "scent": "warm",
-      "color": "#DDBB92",
+      "color": "#c8b9a7",
       "legacyHandle": "sandalwood-soap",
       "ingredients": "Coconut oil, pomegranate seed oil, jojoba oil, avocado butter, papaya seed oil, sesame oil infused with vanilla powder, goat milk, water, NaOH, sandalwood oil.",
       "benefit": "Soothing; helps maintain soft, healthy skin.",
@@ -299,7 +299,7 @@
         "gentle"
       ],
       "scent": "fresh",
-      "color": "#B5D99A",
+      "color": "#b7c8ab",
       "legacyHandle": "aloe-vera-soap",
       "ingredients": "Coconut oil, grapeseed oil, jojoba oil, kokum butter, bakuchi seed oil, aloe vera gel, tea tree essential oil, goat milk, water, NaOH.",
       "benefit": "Helps keep skin looking fresh.",
@@ -338,7 +338,7 @@
         "hydrate"
       ],
       "scent": "warm",
-      "color": "#F3C46E",
+      "color": "#ceb993",
       "legacyHandle": "saffron-sandal-soap",
       "ingredients": "Coconut oil, rosehip seed oil, jojoba oil, kokum butter, carrot seed oil, sesame oil infused with saffron, saffron strands, sandal powder, goat milk, water, NaOH.",
       "benefit": "Helps maintain smooth skin.",
@@ -378,7 +378,7 @@
         "hydrate"
       ],
       "scent": "warm",
-      "color": "#F7CB5A",
+      "color": "#ccb885",
       "legacyHandle": "haldi-chandan-moisturizer",
       "ingredients": "Jojoba oil, shea butter, tamanu oil, cucumber seed oil, rose hydrosol, vetiver hydrosol, glycerin, aloe vera gel, vitamin E, xanthan gum, beeswax, stearic acid, cetyl alcohol, Olivem 1000 (eco-certified emulsifier), turmeric and sandalwood essential oils.",
       "benefit": "Deep nourishment and a natural glow.",
@@ -419,7 +419,7 @@
         "hydrate"
       ],
       "scent": "warm",
-      "color": "#F29C6B",
+      "color": "#cda690",
       "legacyHandle": "kumkumadi-moisturiser",
       "ingredients": "Olive oil, shea butter, grapeseed oil, rose hydrosol infused with kumkumadi herbs, vetiver hydrosol, glycerin, aloe vera juice, vitamin E, beeswax, cetearyl alcohol, Olivem 1000, Sensicare (eco-certified emulsifier), essential oils of lily and lotus.",
       "benefit": "Hydrates and boosts radiance.",
@@ -458,7 +458,7 @@
         "hydrate"
       ],
       "scent": "cozy",
-      "color": "#C99B78",
+      "color": "#b39e8e",
       "legacyHandle": "coffee-vanilla-moisturiser",
       "ingredients": "Mandarin hydrosol infused with black tea and tangerine peel powder, xanthan gum, cetearyl alcohol, stearic acid, aloe vera juice, hyaluronic acid, niacinamide, Olivem 1000, Sensicare (eco-certified emulsifier), coffee and vanilla essential oils.",
       "benefit": "Deep hydration with a smooth texture.",
@@ -496,7 +496,7 @@
         "calm"
       ],
       "scent": "fresh",
-      "color": "#A9C77F",
+      "color": "#a6b393",
       "legacyHandle": "body-massage-oil-for-pain-relieving",
       "ingredients": "Apricot kernel oil, kalonji oil, hempseed oil, sunflower oil (infused with nettle, spikenard, liquorice, bay leaf and cayenne pepper), camphor, peppermint, eucalyptus and cedarwood essential oils.",
       "benefit": "Deeply nourishes and keeps skin refreshed.",
@@ -538,7 +538,7 @@
         "glow"
       ],
       "scent": "floral",
-      "color": "#D9B270",
+      "color": "#bcab8d",
       "legacyHandle": "calming-body-oil",
       "ingredients": "Watermelon seed oil, pomegranate seed oil, cucumber seed oil, jojoba oil, grapeseed oil, sesame oil infused with rosemary, bacopa and jatamansi, apricot kernel oil, castor oil, geranium and lavender essential oils.",
       "benefit": "Hydrates, nourishes and strengthens the skin's natural moisture barrier.",
@@ -574,7 +574,7 @@
         "lips"
       ],
       "scent": "fruity",
-      "color": "#FFBE5C",
+      "color": "#d2b589",
       "legacyHandle": "mango-butter-lip-balm",
       "ingredients": "Mango butter, shea butter, coconut oil, watermelon seed oil, castor oil, beeswax, grapefruit and fennel essential oils.",
       "benefit": "Keeps lips smooth and hydrated.",
@@ -610,7 +610,7 @@
         "lips"
       ],
       "scent": "fruity",
-      "color": "#EE9D9D",
+      "color": "#d8b3b3",
       "legacyHandle": "lip-plump-balm",
       "ingredients": "Coconut oil infused with rose petals and licorice powder, shea butter, castor oil, beeswax, geranium and peppermint essential oils.",
       "benefit": "Keeps lips smooth and hydrated.",

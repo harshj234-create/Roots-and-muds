@@ -8,6 +8,8 @@ import { badgeIcon, WhatsAppIcon } from "@/components/icons";
 import { HeroStack } from "@/components/home/hero-stack";
 import { Quiz } from "@/components/home/quiz";
 import { IngredientExplorer, RoutineStepper } from "@/components/home/explore";
+import { Reels, VideoBand } from "@/components/videos";
+import { getClips } from "@/lib/media";
 
 const HERO_PICKS = ["kumkumadi-moisturizer", "saffron-sandal-soap", "lip-plump-balm", "coffee-cream-soap", "calming-nourishing-oil", "aloe-vera-soap"];
 
@@ -19,6 +21,7 @@ export default async function Home() {
   const tiers = store.pricing.mixAndMatch.tiers;
   const top = tiers[tiers.length - 1];
   const cr = store.pricing.mixAndMatch.completeRoutine;
+  const clips = getClips();
 
   return (
     <>
@@ -65,6 +68,22 @@ export default async function Home() {
           })}
         </ul>
       </section>
+
+      {clips.band && (
+        <VideoBand clip={clips.band}>
+          <span className="label">rooted in ayurveda</span>
+          <h2>Real ingredients. Slow rituals.</h2>
+          <p>Saffron, sandalwood, turmeric and herbs, infused slowly into every bar, cream and oil. Certified organic, cruelty-free, and nothing fake.</p>
+          <div className="hero-actions">
+            <Link href="/#ingredients" className="btn btn-primary">
+              See what&apos;s inside
+            </Link>
+            <Link href="/about" className="btn btn-ghost">
+              Our story
+            </Link>
+          </div>
+        </VideoBand>
+      )}
 
       <section className="section">
         <div className="wrap">
@@ -129,6 +148,24 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {clips.reels.length > 0 && (
+        <section className="section" aria-labelledby="reels-title" style={{ paddingTop: 0 }}>
+          <div className="wrap">
+            <div className="section-head">
+              <div>
+                <span className="label">watch &amp; glow</span>
+                <h2 id="reels-title">Little rituals, on loop.</h2>
+                <p>A peek at the lather, the textures and the ingredients. Swipe through, and tap any clip to pause.</p>
+              </div>
+              <a href={site.instagram} target="_blank" rel="noopener">
+                More on Instagram
+              </a>
+            </div>
+            <Reels clips={clips.reels} />
+          </div>
+        </section>
+      )}
 
       <section className="section" id="ingredients" aria-labelledby="ing-title" style={{ paddingTop: 0 }}>
         <div className="wrap">

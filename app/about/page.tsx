@@ -3,6 +3,8 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { Img } from "@/components/ui";
 import { badgeIcon } from "@/components/icons";
+import { Reels } from "@/components/videos";
+import { getClips } from "@/lib/media";
 
 export const metadata: Metadata = {
   title: "Our story",
@@ -13,6 +15,8 @@ export const metadata: Metadata = {
 const IMAGES = site.images as Record<string, string>;
 
 export default function About() {
+  const { band, reels } = getClips();
+  const clips = [band, ...reels.filter((r) => ["mortar", "turmeric", "soap-sponge", "lavender"].includes(r.slug))].filter(Boolean) as typeof reels;
   return (
     <div className="wrap">
       <header className="page-head">
@@ -33,6 +37,18 @@ export default function About() {
           </section>
         ))}
       </div>
+
+      {clips.length > 0 && (
+        <section className="section" style={{ paddingBottom: 0 }} aria-labelledby="made-title">
+          <div className="section-head">
+            <div>
+              <span className="label">how it&apos;s made</span>
+              <h2 id="made-title">Ayurveda, the slow way.</h2>
+            </div>
+          </div>
+          <Reels clips={clips} />
+        </section>
+      )}
 
       <section className="section" style={{ paddingBottom: 0 }}>
         <div className="section-head">
