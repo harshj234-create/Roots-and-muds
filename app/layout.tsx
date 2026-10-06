@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-export const viewport: Viewport = { themeColor: "#f5efe4", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#fffcf6", width: "device-width", initialScale: 1 };
 
 // Pages are cached and refreshed when the admin page saves changes.
 export const revalidate = 3600;

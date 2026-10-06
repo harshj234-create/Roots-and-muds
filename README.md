@@ -97,11 +97,6 @@ Change names, prices, sizes, descriptions, ingredients, stock, bestsellers; bund
 
 Admin edits are stored in the database and take priority over the data files. **Reset to data files** throws away the admin edits.
 
-### Videos
-The skincare clips on the home and About pages are free stock videos from Pexels (free for commercial use, no credit required). They show hands and ingredients only, so they don't suggest that anyone in them endorses your products. They're saved, silent and compressed, in `public/videos/` and listed in `data/media.json` (captions, links and which one is the big background band).
-
-To use your own videos (for example from your Instagram or TikTok), add an MP4 to `public/videos/` with a poster image of the same name ending `.jpg`, and add it to `data/media.json`. Or add a Pexels clip ID to `data/media.json` and the **Save videos** job on GitHub downloads and compresses it for you.
-
 ### The data files (for bigger edits or a developer)
 | File | What it holds |
 |---|---|
