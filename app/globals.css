@@ -3109,3 +3109,43 @@ a:hover,
   bottom: auto;
   top: 40%;
 }
+
+/* Show products in their true colours: plain white tiles (the studio photos are on white),
+   no blending. Colour accents move to the frames and label bars around the photos. */
+.ph,
+.stack-card .ph,
+.cat-tile .ph,
+.card-img .ph,
+.gallery-main .ph,
+.thumbs .ph,
+.mini .ph,
+.cluster .ph,
+.pick .ph,
+.ritual-item .ph,
+.cart-line .thumb .ph,
+.drawer .d-line .ph,
+.sticky-buy .ph {
+  background: #fff;
+}
+.ph img {
+  mix-blend-mode: normal;
+}
+.stack-card {
+  background: #fff;
+}
+.stack-card .info {
+  background: var(--tint);
+}
+.cat-tile {
+  background: #fff;
+}
+.cat-tile .txt {
+  background: var(--tint);
+}
+.card-img,
+.gallery-main,
+.ritual-item,
+.mini,
+.pick {
+  border-color: var(--ink);
+}
