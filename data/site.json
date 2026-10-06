@@ -47,7 +47,7 @@
     },
     {
       "q": "Where do you deliver and how much does it cost?",
-      "a": "We deliver to all seven emirates. Delivery is AED 15, and free on orders of AED 150 or more."
+      "a": "We deliver to all seven emirates. Delivery is a flat AED 15 per order."
     },
     {
       "q": "How long does delivery take?",
@@ -81,7 +81,7 @@
   "policies": {
     "delivery": [
       "We deliver to all seven emirates: Abu Dhabi, Dubai, Sharjah, Ajman, Umm Al Quwain, Ras Al Khaimah and Fujairah.",
-      "Delivery costs AED 15 per order and is free on orders of AED 150 or more.",
+      "Delivery costs a flat AED 15 per order.",
       "Orders usually arrive within 1–3 working days. After you order we will contact you by phone or WhatsApp to confirm the details and agree a delivery time.",
       "Payment is cash on delivery. Please have the exact amount ready if you can; the total is shown on your order confirmation."
     ],

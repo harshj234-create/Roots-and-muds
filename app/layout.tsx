@@ -56,7 +56,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     address: { "@type": "PostalAddress", addressCountry: "AE" },
   };
   const marquee = [
-    `Free delivery over AED ${freeFrom}`,
+    ...(freeFrom ? [`Free delivery over AED ${freeFrom}`] : []),
     "Pay cash on delivery",
     "Certified organic",
     "Cruelty free",

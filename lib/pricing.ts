@@ -77,7 +77,7 @@ export interface PricingConfig {
   };
   applyToCart: { enabled: boolean };
   giftBox: { enabled: boolean; price: number; label: string };
-  delivery: { fee: number; freeFrom: number };
+  delivery: { fee: number; freeFrom: number | null }; // freeFrom null = no free delivery
 }
 
 export interface Store {
@@ -479,7 +479,8 @@ export function priceCart(lines: CartLine[], store: Store): PricedCart {
   merch += looseGroup.final;
 
   const { fee, freeFrom } = store.pricing.delivery;
-  const deliveryFee = merch <= 0 || merch >= freeFrom ? 0 : fee;
+  const free = typeof freeFrom === "number" && freeFrom > 0 ? freeFrom : null;
+  const deliveryFee = merch <= 0 || (free !== null && merch >= free) ? 0 : fee;
   return {
     lines: out,
     itemCount,
@@ -490,7 +491,7 @@ export function priceCart(lines: CartLine[], store: Store): PricedCart {
     deliveryFee,
     total: merch + deliveryFee,
     looseOffers: looseGroup.offers,
-    freeDeliveryGap: merch > 0 && merch < freeFrom ? freeFrom - merch : 0,
+    freeDeliveryGap: free !== null && merch > 0 && merch < free ? free - merch : 0,
     problems,
   };
 }

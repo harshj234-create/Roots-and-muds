@@ -136,7 +136,7 @@ export function CartDrawer() {
 
   if (!drawerOpen || path === "/cart" || path === "/checkout") return null;
   const free = store.pricing.delivery.freeFrom;
-  const pct = Math.min(100, Math.round((c.merchandiseTotal / free) * 100));
+  const pct = free ? Math.min(100, Math.round((c.merchandiseTotal / free) * 100)) : 0;
 
   const thumb = (key: string) => {
     const l = lines.find((x) => x.key === key)!;
@@ -169,12 +169,14 @@ export function CartDrawer() {
             </div>
           ) : (
             <>
+              {free ? (
               <div className="free-bar">
                 <p>{c.freeDeliveryGap > 0 ? `AED ${c.freeDeliveryGap} away from free delivery` : "You've unlocked free delivery 🎉"}</p>
                 <div className="meter" aria-hidden="true">
                   <span style={{ width: `${pct}%` }} />
                 </div>
               </div>
+              ) : null}
               {c.lines.map((pl) => {
                 const p = thumb(pl.key);
                 const line = lines.find((l) => l.key === pl.key)!;

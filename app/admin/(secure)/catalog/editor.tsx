@@ -322,10 +322,20 @@ export function CatalogEditor({ initial, customised }: { initial: Store; customi
               Delivery fee AED
               <input type="number" min={0} value={store.pricing.delivery.fee} style={{ width: 90 }} onChange={(e) => update((s) => ((s.pricing.delivery.fee = num(e.target.value)), s))} />
             </label>
-            <label style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-              Free delivery from AED
-              <input type="number" min={0} value={store.pricing.delivery.freeFrom} style={{ width: 90 }} onChange={(e) => update((s) => ((s.pricing.delivery.freeFrom = num(e.target.value)), s))} />
+            <label className="check" style={{ marginBottom: "0.5rem" }}>
+              <input
+                type="checkbox"
+                checked={!!store.pricing.delivery.freeFrom}
+                onChange={(e) => update((s) => ((s.pricing.delivery.freeFrom = e.target.checked ? 150 : null), s))}
+              />
+              <span>Offer free delivery on bigger orders</span>
             </label>
+            {!!store.pricing.delivery.freeFrom && (
+              <label style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+                Free delivery from AED
+                <input type="number" min={1} value={store.pricing.delivery.freeFrom} style={{ width: 90 }} onChange={(e) => update((s) => ((s.pricing.delivery.freeFrom = Math.max(1, num(e.target.value))), s))} />
+              </label>
+            )}
             <h3 style={{ marginTop: "1.5rem" }}>Gift box</h3>
             <label className="check" style={{ marginBottom: "0.5rem" }}>
               <input type="checkbox" checked={store.pricing.giftBox.enabled} onChange={(e) => update((s) => ((s.pricing.giftBox.enabled = e.target.checked), s))} />

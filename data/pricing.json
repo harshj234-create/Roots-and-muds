@@ -37,6 +37,6 @@
   },
   "delivery": {
     "fee": 15,
-    "freeFrom": 150
+    "freeFrom": null
   }
 }

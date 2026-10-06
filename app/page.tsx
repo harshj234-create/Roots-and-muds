@@ -273,7 +273,10 @@ export default async function Home() {
             </li>
             <li>
               <h3>Pay when it arrives</h3>
-              <p>Cash to the courier, anywhere in the UAE. Free delivery over AED {store.pricing.delivery.freeFrom}.</p>
+              <p>
+                Cash to the courier, anywhere in the UAE. Delivery is AED {store.pricing.delivery.fee}
+                {store.pricing.delivery.freeFrom ? `, free over AED ${store.pricing.delivery.freeFrom}` : ""}.
+              </p>
             </li>
           </ol>
           <div className="nudge" style={{ marginTop: "1.75rem" }}>

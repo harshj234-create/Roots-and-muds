@@ -129,7 +129,7 @@ All rules live in `data/pricing.json` / the admin page. The same code (`lib/pric
 - **Mix & Match**: 3–4 items 5% off, 5–7 items 10%, 8+ items 15%. A box with at least one soap, one moisturizer and one oil gets an extra 5% (*Complete Routine*). The optional gift box (AED 10) is added after discounts.
 - **Automatic savings in the cart**: loose items get the best available price: matching ready-made bundles, the Mix & Match tier, or a combination. **Each item gets only one discount**, never two stacked on the same item. Mix & Match boxes also get the best of tier or bundle price.
 - The cart suggests a bundle when a customer is close to one ("Add Mango Butter Lip Balm to complete the Kumkumadi Glow Ritual and save AED 11").
-- Prices are rounded to whole AED. Delivery is AED 15, free when products total AED 150 or more after savings.
+- Prices are rounded to whole AED. Delivery is a flat AED 15 per order. Free delivery is switched off; you can switch it on (with your own threshold) on the admin page.
 
 Run `npm test` to check the pricing rules (12 checks, including every bundle price from the brief).
 

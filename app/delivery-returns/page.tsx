@@ -4,14 +4,14 @@ import { getStore } from "@/lib/store";
 
 export const metadata: Metadata = {
   title: "Delivery & returns",
-  description: "Cash on delivery to all 7 emirates. AED 15 delivery, free from AED 150. Our returns policy for handmade skincare.",
+  description: "Cash on delivery to all 7 emirates with flat AED 15 delivery. Our returns policy for handmade skincare.",
   alternates: { canonical: "/delivery-returns" },
 };
 
 export default async function Policy() {
   const { pricing } = await getStore();
   // Keep the fee numbers in step with data/pricing.json
-  const fix = (s: string) => s.replace(/AED 15\b/g, `AED ${pricing.delivery.fee}`).replace(/AED 150\b/g, `AED ${pricing.delivery.freeFrom}`);
+  const fix = (s: string) => s.replace(/AED 15\b/g, `AED ${pricing.delivery.fee}`);
   return (
     <div className="wrap">
       <header className="page-head">

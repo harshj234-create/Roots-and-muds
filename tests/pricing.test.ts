@@ -77,11 +77,18 @@ test("no item is discounted twice; picks the best combination", () => {
   assert.ok(g.savings <= 125 - 114);
 });
 
-test("free delivery from AED 150", () => {
-  const c = priceCart([p("haldi-chandan-moisturizer", 3)], store); // 150 * .95 = 142.5 → 143 (<150)
+test("flat delivery fee, no free delivery by default", () => {
+  const big = priceCart([p("haldi-chandan-moisturizer", 6)], store);
+  assert.equal(big.deliveryFee, 15);
+  assert.equal(big.freeDeliveryGap, 0);
+});
+
+test("free delivery threshold still works when switched on", () => {
+  const store150: Store = { ...store, pricing: { ...store.pricing, delivery: { fee: 15, freeFrom: 150 } } };
+  const c = priceCart([p("haldi-chandan-moisturizer", 3)], store150); // 150 * .95 = 142.5 → 143 (<150)
   assert.equal(c.merchandiseTotal, 143);
   assert.equal(c.deliveryFee, 15);
-  const c2 = priceCart([p("haldi-chandan-moisturizer", 4)], store); // 200 * .95 = 190
+  const c2 = priceCart([p("haldi-chandan-moisturizer", 4)], store150); // 200 * .95 = 190
   assert.equal(c2.deliveryFee, 0);
 });
 
@@ -95,7 +102,7 @@ test("ready-made bundle line and gift box", () => {
   );
   assert.equal(c.lines[0].lineTotal, 109);
   assert.equal(c.lines[1].lineTotal, 71 + 10);
-  assert.equal(c.total, 190);
+  assert.equal(c.total, 190 + 15);
 });
 
 test("invalid bundle choices are flagged", () => {

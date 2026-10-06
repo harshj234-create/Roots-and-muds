@@ -162,7 +162,8 @@ export function ProductDetail({ product }: { product: Product }) {
             <summary>Delivery &amp; payment</summary>
             <div>
               <p>
-                Cash on delivery to all 7 emirates. Delivery is AED {store.pricing.delivery.fee}, free from AED {store.pricing.delivery.freeFrom}.{" "}
+                Cash on delivery to all 7 emirates. Delivery is AED {store.pricing.delivery.fee}
+                {store.pricing.delivery.freeFrom ? `, free from AED ${store.pricing.delivery.freeFrom}` : ""}.{" "}
                 <Link href="/delivery-returns">Delivery &amp; returns</Link>
               </p>
             </div>
