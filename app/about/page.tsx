@@ -17,7 +17,9 @@ export default function About() {
     <div className="wrap">
       <header className="page-head">
         <span className="label">our story</span>
-        <h1>Pure care, rooted in nature.</h1>
+        <h1>
+          Pure care, <span className="it">rooted in nature</span>
+        </h1>
         <p className="lede">{site.brandStory[0]}</p>
       </header>
       <div className="about-rows">
@@ -38,7 +40,9 @@ export default function About() {
         <div className="section-head">
           <div>
             <span className="label">our promise</span>
-            <h2>What we stand for.</h2>
+            <h2>
+              What we <span className="it">stand for</span>
+            </h2>
           </div>
         </div>
         <ol className="steps">

@@ -27,7 +27,7 @@ export function CartView() {
         <div className="pebble-mark" aria-hidden="true">
           <RaMLogo />
         </div>
-        <h2>Your cart is empty</h2>
+        <h2>Your bag is empty</h2>
         <p className="muted">Start with a single favourite, or build a bundle and save up to {store.pricing.mixAndMatch.tiers.at(-1)?.percent}%.</p>
         <div className="hero-actions" style={{ justifyContent: "center" }}>
           <Link href="/shop" className="btn btn-primary">

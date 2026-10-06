@@ -13,7 +13,9 @@ export default function Contact() {
     <div className="wrap">
       <header className="page-head">
         <span className="label">say hi</span>
-        <h1>Talk to us.</h1>
+        <h1>
+          Talk to <span className="it">us</span>
+        </h1>
         <p className="lede">Questions about a product, an order or a gift? WhatsApp is the quickest way to reach us.</p>
       </header>
       <div className="contact-grid" style={{ paddingBottom: "2rem" }}>

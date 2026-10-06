@@ -98,7 +98,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <div>
               <span className="label">pairs well with</span>
               <h2 id="fbt" style={{ fontSize: "var(--step-3)" }}>
-                Frequently bought together
+                Frequently <span className="it">bought together</span>
               </h2>
             </div>
           </div>

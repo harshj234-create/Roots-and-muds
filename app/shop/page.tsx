@@ -15,7 +15,9 @@ export default async function ShopPage() {
     <div className="wrap">
       <header className="page-head" style={{ paddingBottom: 0 }}>
         <span className="label">all {store.products.length} products</span>
-        <h1>Shop the lineup.</h1>
+        <h1>
+          Shop the <span className="it">lineup</span>
+        </h1>
         <p className="lede">Ayurvedic recipes, certified organic, with no parabens and no fake scents.</p>
       </header>
       <Suspense fallback={<div style={{ minHeight: "60vh" }} />}>

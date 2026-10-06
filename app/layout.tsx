@@ -7,9 +7,25 @@ import { Footer } from "@/components/footer";
 import { getStore } from "@/lib/store";
 import { site } from "@/lib/site";
 
-const bricolage = localFont({ src: "./fonts/Bricolage.woff2", weight: "200 800", variable: "--font-bricolage", display: "swap" });
-const figtree = localFont({ src: "./fonts/Figtree.woff2", weight: "300 900", variable: "--font-figtree", display: "swap" });
-const mono = localFont({ src: "./fonts/JetBrainsMono.woff2", weight: "500", variable: "--font-mono-jb", display: "swap" });
+const clash = localFont({
+  src: [
+    { path: "./fonts/ClashDisplay-500.woff2", weight: "500" },
+    { path: "./fonts/ClashDisplay-600.woff2", weight: "600" },
+    { path: "./fonts/ClashDisplay-700.woff2", weight: "700" },
+  ],
+  variable: "--font-clash",
+  display: "swap",
+});
+const satoshi = localFont({
+  src: [
+    { path: "./fonts/Satoshi-400.woff2", weight: "400" },
+    { path: "./fonts/Satoshi-500.woff2", weight: "500" },
+    { path: "./fonts/Satoshi-700.woff2", weight: "700" },
+  ],
+  variable: "--font-satoshi",
+  display: "swap",
+});
+const instrument = localFont({ src: "./fonts/InstrumentSerif-Italic.woff2", weight: "400", style: "italic", variable: "--font-instrument", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL || site.domain),
@@ -21,7 +37,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-export const viewport: Viewport = { themeColor: "#fffcf6", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#f7efe3", width: "device-width", initialScale: 1 };
 
 // Pages are cached and refreshed when the admin page saves changes.
 export const revalidate = 3600;
@@ -40,17 +56,16 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     address: { "@type": "PostalAddress", addressCountry: "AE" },
   };
   const marquee = [
-    "pay cash on delivery",
-    `free delivery from AED ${freeFrom}`,
-    "certified organic",
-    "cruelty free",
-    "no parabens, no fake scents",
-    "ayurvedic recipes",
+    `Free delivery over AED ${freeFrom}`,
+    "Pay cash on delivery",
+    "Certified organic",
+    "Cruelty free",
+    "No parabens. No fake scents.",
     `AED ${fee} delivery to all 7 emirates`,
   ];
   return (
     // To add Arabic later: render lang="ar" dir="rtl" for /ar routes (see README). All CSS uses logical properties.
-    <html lang={site.locale.lang} dir={site.locale.dir} className={`${bricolage.variable} ${figtree.variable} ${mono.variable}`}>
+    <html lang={site.locale.lang} dir={site.locale.dir} className={`${clash.variable} ${satoshi.variable} ${instrument.variable}`}>
       <body>
         <a href="#main" className="skip">
           Skip to content

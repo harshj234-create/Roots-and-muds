@@ -74,6 +74,57 @@ export function IngredientExplorer({ ingredients }: { ingredients: Ingredient[] 
   );
 }
 
+const KICKER: Record<string, string> = {
+  kumkumadi: "Ayurvedic oil",
+  saffron: "Kesar",
+  sandalwood: "Chandan",
+  turmeric: "Haldi",
+  rose: "Petals",
+  coffee: "Grounds",
+  vanilla: "Pod",
+  lavender: "Flower",
+  aloe: "Gel",
+  mango: "Butter",
+  "goat-milk": "Milk",
+  herbs: "Botanicals",
+};
+
+/** Ingredient cards that flip over to show what they do and where to find them. */
+export function IngredientFlips({ ingredients }: { ingredients: Ingredient[] }) {
+  const store = useStoreData();
+  const [open, setOpen] = useState<string | null>(null);
+  return (
+    <div className="flip-grid">
+      {ingredients.map((ing) => {
+        const list = ing.products.map((id) => store.products.find((p) => p.id === id)).filter(Boolean);
+        const flipped = open === ing.id;
+        return (
+          <button
+            key={ing.id}
+            className="flip"
+            aria-pressed={flipped}
+            aria-label={`${ing.name}: ${flipped ? ing.text : "tap to see what it does"}`}
+            onClick={() => setOpen(flipped ? null : ing.id)}
+          >
+            <span className="flip-inner">
+              <span className="flip-face" style={{ ["--tint" as string]: ing.color }}>
+                <span className="k">{KICKER[ing.id] ?? "Ingredient"}</span>
+                <span className="n">{ing.name}</span>
+                <span className="hint">tap to flip →</span>
+              </span>
+              <span className="flip-face flip-back">
+                <span className="k">{ing.name}</span>
+                <p>{ing.text}</p>
+                <span className="in">In: {list.map((p) => p!.name).join(", ")}</span>
+              </span>
+            </span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
 const ROUTINE = [
   { t: "Cleanse", when: "morning + night", cat: "soaps", text: "Lather up with a goat-milk bar on damp skin. Gentle enough for face and body, twice a day.", pick: ["kumkumadi-soap", "aloe-vera-soap", "lavender-soap"] },
   { t: "Smooth", when: "2–3× a week", cat: "soaps", text: "Swap in the Coffee Cream bar. Real robusta coffee buffs away rough, dull bits.", pick: ["coffee-cream-soap"] },

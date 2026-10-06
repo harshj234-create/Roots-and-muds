@@ -5,89 +5,90 @@ import ingredientsFile from "@/data/ingredients.json";
 import { BundleCard, ProductCard } from "@/components/cards";
 import { Img, Tile } from "@/components/ui";
 import { badgeIcon, WhatsAppIcon } from "@/components/icons";
-import { HeroStack } from "@/components/home/hero-stack";
+import { Ticker } from "@/components/footer";
+import { Collage } from "@/components/home/collage";
 import { Quiz } from "@/components/home/quiz";
-import { IngredientExplorer, RoutineStepper } from "@/components/home/explore";
+import { IngredientFlips, RoutineStepper } from "@/components/home/explore";
 
-const HERO_PICKS = ["kumkumadi-moisturizer", "saffron-sandal-soap", "lip-plump-balm", "coffee-cream-soap", "calming-nourishing-oil", "aloe-vera-soap"];
+const COLLAGE = ["kumkumadi-soap", "lip-plump-balm", "coffee-vanilla-moisturizer", "lavender-soap"];
+const CAT_LINES: Record<string, string> = {
+  soaps: "8 goat-milk bars. Zero harsh stuff.",
+  moisturizers: "Glow in a bottle.",
+  oils: "Massage-ready blends.",
+  "lip-balms": "Soft lips, always.",
+};
 
 export default async function Home() {
   const store = await getStore();
-  const stack = HERO_PICKS.map((id) => store.products.find((p) => p.id === id)).filter((p) => p && p.inStock) as typeof store.products;
+  const collage = COLLAGE.map((id) => store.products.find((p) => p.id === id)).filter(Boolean) as typeof store.products;
   const bundles = store.bundles.filter((b) => b.active && b.featured);
   const best = store.products.filter((p) => p.bestseller).slice(0, 4);
-  const tiers = store.pricing.mixAndMatch.tiers;
-  const top = tiers[tiers.length - 1];
+  const tiers = [...store.pricing.mixAndMatch.tiers].sort((a, b) => a.minItems - b.minItems);
   const cr = store.pricing.mixAndMatch.completeRoutine;
+  const badges = site.badges.slice(0, 4);
 
   return (
     <>
       <section className="hero">
         <div className="wrap hero-grid">
           <div>
-            <span className="sticker">🌿 Ayurveda, but make it daily</span>
+            <span className="label">Ayurvedic · certified organic</span>
             <h1>
-              Feel fresh.
-              <br />
-              Look <span className="hl">radiant.</span>
+              your skin&apos;s <span className="it">new</span> <span className="hl">soft era</span>
             </h1>
             <p className="lede">
-              {site.tagline} {site.supportingLine}
+              Ayurvedic soaps, moisturizers, oils and lip balms. No parabens, no fake scents, no stress. <b>Pay cash when it shows up.</b>
             </p>
             <div className="hero-actions">
               <Link href="/shop" className="btn btn-primary">
-                Shop now
+                Shop the drop →
               </Link>
               <Link href="/bundles#mix-and-match" className="btn btn-ghost">
-                Build your bundle
+                Build your box
               </Link>
             </div>
-            <ul className="hero-facts">
-              <li>💸 Pay cash on delivery</li>
-              <li>🚚 Free delivery from AED {store.pricing.delivery.freeFrom}</li>
-              <li>🎁 Bundles from AED {Math.min(...store.bundles.filter((b) => b.active).map((b) => b.price))}</li>
+            <ul className="hero-facts" aria-label="Our promises">
+              {badges.map((b) => {
+                const Icon = badgeIcon[b];
+                return (
+                  <li key={b}>
+                    {Icon && <Icon />}
+                    {b}
+                  </li>
+                );
+              })}
             </ul>
           </div>
-          {stack.length > 0 && <HeroStack products={stack} />}
+          {collage.length > 0 && <Collage portrait={site.images.heroBanner} products={collage} />}
         </div>
       </section>
 
-      <section className="badges" aria-label="Our promises">
-        <ul className="wrap">
-          {site.badges.map((b) => {
-            const Icon = badgeIcon[b];
-            return (
-              <li key={b}>
-                {Icon && <Icon />}
-                {b}
-              </li>
-            );
-          })}
-        </ul>
-      </section>
+      <Ticker tilt words={["kumkumadi", "sandalwood", "turmeric", "coffee", "lavender", "aloe vera", "mango butter", "saffron"]} />
 
       <section className="section">
         <div className="wrap">
           <div className="section-head">
             <div>
-              <span className="label">the lineup</span>
-              <h2>Shop by category</h2>
+              <span className="label">Shop by category</span>
+              <h2>
+                Pick your <span className="it">ritual</span>
+              </h2>
             </div>
-            <Link href="/shop">See all {store.products.length} products</Link>
+            <Link href="/shop" className="pill-link">
+              All {store.products.length} products →
+            </Link>
           </div>
           <div className="cat-grid">
             {store.categories.map((c) => {
               const inCat = store.products.filter((p) => p.category === c.id);
               const hero = inCat.find((p) => p.bestseller) ?? inCat[0];
               return (
-                <Link key={c.id} href={`/shop?category=${c.id}`} className="cat-tile" style={{ ["--tint" as string]: c.color }}>
+                <Link key={c.id} href={`/shop?category=${c.id}`} className="cat-tile">
                   {hero && <Tile src={hero.images[0]} alt="" sizes="(max-width: 900px) 50vw, 300px" />}
                   <div className="txt">
                     <div>
                       <h3>{c.name}</h3>
-                      <p>
-                        {inCat.length} products, from AED {Math.min(...inCat.map((p) => p.price))}
-                      </p>
+                      <p>{CAT_LINES[c.id] ?? c.description}</p>
                     </div>
                     <span className="arrow-dot" aria-hidden="true">
                       →
@@ -100,27 +101,88 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="section quiz-band" id="quiz" aria-labelledby="quiz-title">
+      <section className="section" id="quiz" aria-labelledby="quiz-title" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="section-head">
             <div>
-              <span className="label">30-second skin quiz</span>
-              <h2 id="quiz-title">Find your ritual in three taps.</h2>
-              <p>Tell us about your skin and we'll build a soap, moisturizer and oil routine, with the bundle discount already worked out.</p>
+              <span className="label blush">3 questions · 30 seconds</span>
+              <h2 id="quiz-title">
+                Not sure where to start? <span className="it">take the skin quiz.</span>
+              </h2>
             </div>
           </div>
           <Quiz />
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="section-head">
             <div>
-              <span className="label">fan faves</span>
-              <h2>Bestsellers</h2>
+              <span className="label sand">Bundles</span>
+              <h2>
+                Better <span className="it">together</span>
+              </h2>
+              <p>Ready-made rituals that cost less than buying each item. Your wallet says thanks.</p>
             </div>
-            <Link href="/shop">Shop all</Link>
+            <Link href="/bundles" className="pill-link">
+              All bundles →
+            </Link>
+          </div>
+          <div className="bundle-grid scroll">
+            {bundles.map((b) => (
+              <BundleCard key={b.id} bundle={b} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="mm-band">
+            <div className="txt">
+              <span className="label terra">Mix &amp; Match</span>
+              <h2>
+                pick any {tiers[0]?.minItems ?? 3}+. <span className="it">pay less</span> on all of them.
+              </h2>
+              <ul className="tier-cards">
+                {tiers.map((t, i) => (
+                  <li key={t.minItems}>
+                    <small>
+                      {t.minItems}
+                      {tiers[i + 1] ? `–${tiers[i + 1].minItems - 1}` : "+"} items
+                    </small>
+                    <b>{t.percent}% off</b>
+                  </li>
+                ))}
+              </ul>
+              <p>
+                Any soap, cream, oil or balm counts.
+                {cr.enabled && ` Add a soap, a moisturizer and an oil for an extra ${cr.percent}% off.`} Our calculator does the maths for you.
+              </p>
+              <Link href="/bundles#mix-and-match" className="btn">
+                Start building →
+              </Link>
+            </div>
+            <div className="photo">
+              <Img src={site.images.aboutCrafted} alt="Oil dropping from a glass dropper into an amber bottle" width={736} height={946} sizes="(max-width: 860px) 100vw, 560px" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="section-head">
+            <div>
+              <span className="label">Bestsellers</span>
+              <h2>
+                Most <span className="it">added to bag</span>
+              </h2>
+            </div>
+            <Link href="/shop" className="pill-link">
+              Shop all →
+            </Link>
           </div>
           <div className="product-grid four">
             {best.map((p) => (
@@ -134,55 +196,25 @@ export default async function Home() {
         <div className="wrap">
           <div className="section-head">
             <div>
-              <span className="label">what's inside</span>
-              <h2 id="ing-title">Tap an ingredient.</h2>
-              <p>Every ingredient is listed on the box. Here's what the hero ones do, and where to find them.</p>
+              <span className="label sand">What&apos;s inside</span>
+              <h2 id="ing-title">
+                Ingredients, <span className="it">decoded</span>
+              </h2>
+              <p>Tap a card to flip it. Every ingredient is printed on the box, too.</p>
             </div>
           </div>
-          <IngredientExplorer ingredients={ingredientsFile.ingredients} />
+          <IngredientFlips ingredients={ingredientsFile.ingredients} />
         </div>
       </section>
 
-      <section className="section" style={{ background: "var(--paper-2)", borderBlock: "var(--border)" }}>
+      <section className="section" aria-labelledby="routine-title" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="section-head">
             <div>
-              <span className="label">save more</span>
-              <h2>Bundle up, save more.</h2>
-              <p>Ready-made rituals for less than buying each item separately.</p>
-            </div>
-            <Link href="/bundles">See all bundles</Link>
-          </div>
-          <div className="bundle-grid scroll">
-            {bundles.map((b) => (
-              <BundleCard key={b.id} bundle={b} />
-            ))}
-          </div>
-          <div
-            className="nudge"
-            style={{ marginTop: "1.5rem", background: "var(--lime)", border: "var(--border)", boxShadow: "var(--shadow)", padding: "1.25rem 1.5rem" }}
-          >
-            <p>
-              <strong style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", letterSpacing: "-0.03em", display: "block" }}>
-                Rather pick your own?
-              </strong>
-              <span style={{ fontWeight: 500 }}>
-                Mix any {tiers[0].minItems}+ products and save up to {top.percent}%{cr.enabled && `, plus an extra ${cr.percent}% for a soap + moisturizer + oil combo`}.
-              </span>
-            </p>
-            <Link href="/bundles#mix-and-match" className="btn btn-ghost">
-              Build your bundle
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section routine-band" aria-labelledby="routine-title" style={{ borderTop: 0 }}>
-        <div className="wrap">
-          <div className="section-head">
-            <div>
-              <span className="label">how to use it</span>
-              <h2 id="routine-title">Your 5-step shower ritual.</h2>
+              <span className="label blush">How to use it</span>
+              <h2 id="routine-title">
+                Your 5-step <span className="it">shower ritual</span>
+              </h2>
               <p>Tap through the steps. Each one comes with our picks.</p>
             </div>
           </div>
@@ -190,19 +222,21 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="section story">
+      <section className="section story" style={{ paddingTop: 0 }}>
         <div className="wrap story-grid">
           <div className="story-art">
             <div className="photo">
-              <Img src={site.images.heroBanner} alt="Woman applying moisturizer to her face" width={736} height={1104} sizes="(max-width: 900px) 90vw, 460px" />
+              <Img src={site.images.banner2} alt="Woman washing her face with a gentle lather" width={736} height={745} sizes="(max-width: 900px) 90vw, 440px" />
             </div>
             <span className="float-sticker" aria-hidden="true">
               pure care, rooted in nature
             </span>
           </div>
           <div>
-            <span className="label">our story</span>
-            <h2>Where nature becomes your everyday ritual.</h2>
+            <span className="label">Our story</span>
+            <h2>
+              Where nature becomes your <span className="it">everyday ritual</span>
+            </h2>
             {site.brandStory.slice(0, 2).map((p, i) => (
               <p key={i}>{p}</p>
             ))}
@@ -211,40 +245,41 @@ export default async function Home() {
                 Read our story
               </Link>
               <a href={site.instagram} target="_blank" rel="noopener" className="btn btn-ghost">
-                Follow @rootsandmuds
+                @rootsandmuds
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="section-head">
             <div>
-              <span className="label">cash on delivery</span>
-              <h2>How ordering works.</h2>
-              <p>No card. No account. You pay when it arrives.</p>
+              <span className="label">How it works</span>
+              <h2>
+                No cards. <span className="it">Just cash on delivery.</span>
+              </h2>
             </div>
           </div>
           <ol className="steps">
             <li>
-              <h3>Fill your cart</h3>
+              <h3>Fill your bag</h3>
               <p>Single products, a ready-made bundle or your own Mix &amp; Match box.</p>
             </li>
             <li>
               <h3>Place your order</h3>
-              <p>Just your name, mobile number and address. We'll call or WhatsApp you to confirm.</p>
+              <p>Just your name, mobile number and address. We&apos;ll call or WhatsApp you to confirm.</p>
             </li>
             <li>
-              <h3>Pay cash on delivery</h3>
-              <p>Pay the courier when it arrives, anywhere in the UAE. Free delivery from AED {store.pricing.delivery.freeFrom}.</p>
+              <h3>Pay when it arrives</h3>
+              <p>Cash to the courier, anywhere in the UAE. Free delivery over AED {store.pricing.delivery.freeFrom}.</p>
             </li>
           </ol>
-          <div className="nudge" style={{ marginTop: "2rem" }}>
+          <div className="nudge" style={{ marginTop: "1.75rem" }}>
             <p>Not sure what to pick? Ask us on WhatsApp.</p>
             <a className="btn btn-wa" href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Hello Roots and Muds, I have a question.")}`} target="_blank" rel="noopener">
-              <WhatsAppIcon width={20} height={20} />
+              <WhatsAppIcon width={18} height={18} />
               Chat on WhatsApp
             </a>
           </div>

@@ -67,9 +67,9 @@ export async function POST(req: Request) {
   const store = await getStore();
   const lines = sanitizeLines(body?.lines);
   const priced = priceCart(lines, store);
-  if (!priced.lines.length) return NextResponse.json({ error: "Your cart is empty." }, { status: 400 });
+  if (!priced.lines.length) return NextResponse.json({ error: "Your bag is empty." }, { status: 400 });
   if (priced.problems.length) return NextResponse.json({ error: `${priced.problems.join(". ")}. Please update your cart.` }, { status: 409 });
-  if (priced.itemCount === 0) return NextResponse.json({ error: "Your cart is empty." }, { status: 400 });
+  if (priced.itemCount === 0) return NextResponse.json({ error: "Your bag is empty." }, { status: 400 });
   if (typeof body?.expectedTotal === "number" && body.expectedTotal !== priced.total) {
     return NextResponse.json({ error: `Prices have changed since you opened the page. Your new total is AED ${priced.total}. Please review and place your order again.`, total: priced.total }, { status: 409 });
   }

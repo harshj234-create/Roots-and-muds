@@ -17,7 +17,9 @@ export default async function BundlesPage() {
       <div className="wrap">
         <header className="page-head">
           <span className="label">bundles</span>
-          <h1>Bundle up, save more.</h1>
+          <h1>
+            Better <span className="it">together</span>
+          </h1>
           <p className="lede">Grab a ready-made ritual, or scroll down and build your own box. The more you add, the more you save.</p>
         </header>
         <div className="bundle-grid three">

@@ -12,9 +12,10 @@ import { cartSuggestion, priceCart, productMap } from "@/lib/pricing";
 const NAV = [
   { href: "/shop", label: "Shop" },
   { href: "/bundles", label: "Bundles" },
-  { href: "/#quiz", label: "Skin quiz" },
+  { href: "/bundles#mix-and-match", label: "Mix & Match" },
+  { href: "/#quiz", label: "Quiz" },
   { href: "/about", label: "Our story" },
-  { href: "/faq", label: "FAQ" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Marquee({ items }: { items: string[] }) {
@@ -54,7 +55,9 @@ export function Header() {
           <span className="mark" aria-hidden="true">
             <RaMLogo />
           </span>
-          <span className="word">Roots &amp; Muds</span>
+          <span className="word">
+            roots<span className="amp">&amp;</span>muds
+          </span>
         </Link>
         <nav className="nav" aria-label="Main">
           {NAV.map((n) => (
@@ -66,15 +69,15 @@ export function Header() {
         {onCartPage ? (
           <Link href="/cart" className="cart-link" aria-label={`Cart, ${ready ? count : 0} items`}>
             <CartIcon />
-            <span className="cart-label">Cart</span>
+            <span className="cart-label">Bag</span>
             <span className="cart-count" aria-hidden="true">
               {ready ? count : 0}
             </span>
           </Link>
         ) : (
-          <button className="cart-link" onClick={() => setDrawerOpen(true)} aria-label={`Open cart, ${ready ? count : 0} items`} aria-haspopup="dialog">
+          <button className="cart-link" onClick={() => setDrawerOpen(true)} aria-label={`Open bag, ${ready ? count : 0} items`} aria-haspopup="dialog">
             <CartIcon />
-            <span className="cart-label">Cart</span>
+            <span className="cart-label">Bag</span>
             <span className={`cart-count${bumping ? " bump" : ""}`} aria-hidden="true">
               {ready ? count : 0}
             </span>
@@ -97,7 +100,7 @@ export function Header() {
               {n.label}
             </Link>
           ))}
-          <Link href="/contact">Contact</Link>
+          <Link href="/faq">FAQ</Link>
         </nav>
       )}
     </header>
@@ -143,11 +146,11 @@ export function CartDrawer() {
 
   return (
     <div className="drawer-wrap">
-      <button className="scrim" aria-label="Close cart" tabIndex={-1} onClick={() => setDrawerOpen(false)} />
+      <button className="scrim" aria-label="Close bag" tabIndex={-1} onClick={() => setDrawerOpen(false)} />
       <div className="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
         <header>
-          <h2 id="drawer-title">Your cart</h2>
-          <button ref={closeRef} className="icon-btn" onClick={() => setDrawerOpen(false)} aria-label="Close cart">
+          <h2 id="drawer-title">Your bag</h2>
+          <button ref={closeRef} className="icon-btn" onClick={() => setDrawerOpen(false)} aria-label="Close bag">
             <CloseIcon />
           </button>
         </header>
@@ -242,7 +245,7 @@ export function CartDrawer() {
               Checkout, pay cash on delivery
             </Link>
             <Link href="/cart" className="btn btn-ghost btn-block btn-sm">
-              View full cart
+              View full bag
             </Link>
           </footer>
         )}

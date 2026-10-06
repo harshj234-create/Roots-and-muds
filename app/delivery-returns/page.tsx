@@ -16,7 +16,9 @@ export default async function Policy() {
     <div className="wrap">
       <header className="page-head">
         <span className="label">the fine print</span>
-        <h1>Delivery &amp; returns.</h1>
+        <h1>
+          Delivery &amp; <span className="it">returns</span>
+        </h1>
       </header>
       <div className="prose">
         <h2 style={{ marginTop: 0 }}>Delivery</h2>

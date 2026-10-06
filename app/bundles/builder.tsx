@@ -85,7 +85,9 @@ export function Builder() {
     <div className="builder">
       <div>
         <span className="label">mix &amp; match</span>
-        <h2 id="mm-title">Build your own box.</h2>
+        <h2 id="mm-title">
+          build your <span className="it">dream</span> box
+        </h2>
         <p className="lede" style={{ marginBottom: "1.5rem" }}>
           Any products, any quantity. Watch the discounts unlock as you go.
         </p>

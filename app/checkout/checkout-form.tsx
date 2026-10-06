@@ -24,7 +24,7 @@ export function CheckoutForm({ emirates, slots }: { emirates: string[]; slots: s
   if (!lines.length) {
     return (
       <div className="empty">
-        <h2>Your cart is empty</h2>
+        <h2>Your bag is empty</h2>
         <Link className="btn btn-primary" href="/shop">
           Go to the shop
         </Link>
@@ -195,14 +195,14 @@ export function CheckoutForm({ emirates, slots }: { emirates: string[]; slots: s
         <Totals c={c} />
         {c.problems.length > 0 && (
           <p className="form-error">
-            {c.problems.join(". ")}. <Link href="/cart">Update your cart</Link>
+            {c.problems.join(". ")}. <Link href="/cart">Update your bag</Link>
           </p>
         )}
         <button className="btn btn-primary btn-block" disabled={sending || c.problems.length > 0}>
           {sending ? "Placing your order…" : `Place order, pay AED ${c.total} on delivery`}
         </button>
         <p className="small muted" style={{ marginTop: "0.9rem", marginBottom: 0 }}>
-          We'll call or WhatsApp you to confirm before delivery. <Link href="/cart">Edit cart</Link>
+          We'll call or WhatsApp you to confirm before delivery. <Link href="/cart">Edit bag</Link>
         </p>
       </aside>
     </form>
