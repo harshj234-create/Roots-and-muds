@@ -96,13 +96,13 @@
   "tiktok": "https://www.tiktok.com/@rootsandmuds",
   "heroTitle": "Feel fresh. Look radiant.",
   "images": {
-    "logo": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/RaM.svg",
-    "heroBanner": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/WhatsApp_Image_2025-08-07_at_18.28.11.jpg",
-    "banner2": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/IMG_6597.jpg",
-    "banner3": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/IMG_6595.jpg",
-    "aboutNature": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/download_3e55d582-cb04-499d-9ac2-6792ecd9fcc4.jpg",
-    "aboutCrafted": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/download_1.jpg",
-    "aboutPlanet": "https://cdn.shopify.com/s/files/1/0816/7168/4372/files/download_2.jpg"
+    "logo": "/images/shop/RaM.svg",
+    "heroBanner": "/images/shop/WhatsApp_Image_2025-08-07_at_18.28.11.jpg",
+    "banner2": "/images/shop/IMG_6597.jpg",
+    "banner3": "/images/shop/IMG_6595.jpg",
+    "aboutNature": "/images/shop/download_3e55d582-cb04-499d-9ac2-6792ecd9fcc4.jpg",
+    "aboutCrafted": "/images/shop/download_1.jpg",
+    "aboutPlanet": "/images/shop/download_2.jpg"
   },
   "about": [
     {
