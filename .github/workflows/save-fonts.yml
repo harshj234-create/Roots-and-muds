@@ -1,0 +1,24 @@
+name: Save fonts
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/save-fonts.mjs"]
+permissions:
+  contents: write
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/save-fonts.mjs
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/fonts
+          git diff --cached --quiet || git commit -m "Save Satoshi and Clash Display fonts"
+          git pull --rebase
+          git push
