@@ -1,11 +1,11 @@
-# Downloads free-licence Unsplash photos (listed in marketing/unsplash-ids.txt) for social posts.
+# Downloads free-licence Unsplash photos (listed in marketing/unsplash-images.txt) for social posts.
 # Lives on the marketing-photos branch only; it never touches the website.
 name: Save marketing photos
 on:
   workflow_dispatch:
   push:
     branches: [marketing-photos]
-    paths: ["marketing/unsplash-ids.txt"]
+    paths: ["marketing/unsplash-images.txt", ".github/workflows/save-marketing-photos.yml"]
 permissions:
   contents: write
 jobs:
@@ -17,22 +17,13 @@ jobs:
         run: |
           mkdir -p marketing/photos
           log=marketing/download-log.txt; : > $log
-          while read -r id; do
+          while read -r id photo; do
             [ -z "$id" ] && continue
             out="marketing/photos/$id.jpg"
-            [ -s "$out" ] && continue
-            code=$(curl -sSL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" -o "$out" -w "%{http_code}" "https://unsplash.com/photos/$id/download?force=true&w=1600")
-            echo "$id download $code $(file -b "$out" | cut -c1-40)" >> $log
-            if ! file "$out" | grep -q JPEG; then
-              rm -f "$out"
-              page=$(curl -sSL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" -w "\nHTTP%{http_code}" "https://unsplash.com/photos/$id")
-              url=$(echo "$page" | grep -o 'https://images.unsplash.com/photo-[0-9a-f-]*' | head -1)
-              echo "$id page $(echo "$page" | tail -1) url=$url" >> $log
-              [ -n "$url" ] && curl -sSL -o "$out" "$url?w=1600&q=85&fm=jpg&fit=max"
-              file "$out" | grep -q JPEG || { rm -f "$out"; echo "$id FAILED" >> $log; }
-            fi
-          done < marketing/unsplash-ids.txt
-          ls -la marketing/photos
+            code=$(curl -sSL -o "$out" -w "%{http_code}" "https://images.unsplash.com/$photo?fm=jpg&q=85&w=1600&fit=max")
+            echo "$id $code $(file -b "$out" | cut -c1-30)" >> $log
+            file "$out" | grep -q JPEG || rm -f "$out"
+          done < marketing/unsplash-images.txt
       - name: Commit photos
         run: |
           git config user.name "github-actions[bot]"
