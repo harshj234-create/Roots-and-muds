@@ -1,0 +1,35 @@
+# Downloads free-licence Unsplash photos (listed in marketing/unsplash-ids.txt) for social posts.
+# Lives on the marketing-photos branch only; it never touches the website.
+name: Save marketing photos
+on:
+  workflow_dispatch:
+  push:
+    branches: [marketing-photos]
+    paths: ["marketing/unsplash-ids.txt"]
+permissions:
+  contents: write
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download photos
+        run: |
+          mkdir -p marketing/photos
+          while read -r id; do
+            [ -z "$id" ] && continue
+            out="marketing/photos/$id.jpg"
+            [ -s "$out" ] && continue
+            curl -sSL --fail -A "Mozilla/5.0" -o "$out" "https://unsplash.com/photos/$id/download?force=true&w=1600" \
+              || { url=$(curl -sSL -A "Mozilla/5.0" "https://unsplash.com/photos/$id" | grep -o 'https://images.unsplash.com/photo-[^"?]*' | head -1);
+                   [ -n "$url" ] && curl -sSL --fail -o "$out" "$url?w=1600&q=85&fm=jpg" || echo "FAILED $id"; }
+            file "$out" || true
+          done < marketing/unsplash-ids.txt
+          ls -la marketing/photos
+      - name: Commit photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add marketing/photos
+          git diff --cached --quiet || git commit -m "Save marketing photos from Unsplash"
+          git push
