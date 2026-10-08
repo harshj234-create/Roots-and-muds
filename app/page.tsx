@@ -245,7 +245,7 @@ export default async function Home() {
                 Read our story
               </Link>
               <a href={site.instagram} target="_blank" rel="noopener" className="btn btn-ghost">
-                @rootsandmuds
+                @roots_and_muds
               </a>
             </div>
           </div>
